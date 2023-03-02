@@ -14,7 +14,7 @@
 				<div class="tbl">
 					<div class="tbl-row">
 						<div class="tbl-cell">
-							<h3>Contrato</h3>
+							<h3>Registrar Nuevo Contrato</h3>
 							<ol class="breadcrumb breadcrumb-simple">
 								<li><a href="#">Inicio</a></li>
 								<li class="active">Contrato</li>
@@ -26,93 +26,111 @@
 			</header>
 			<div class="box-typical box-typical-padding">
 				<p>
-					Desde esta Ventana puede registrar un nuevo Contato.
+					Desde esta ventana puede registrar un nuevo contato.
 				</p>
 
 				<h5 class="m-t-lg with-border">Registro de Contrato</h5>
 
 				<form>
-					<div class="form-group row">
-						<label class="col-sm-2 form-control-label">Número de Contrato</label>
-						<div class="col-sm-10">
-							<p class="form-control-static"><input type="text" class="form-control" id="numero" name="numero" placeholder="No. de Contrato"></p>
-						</div>
+					<div class="row">
+					<div class="col-lg-4">
+						<fieldset class="form-group">
+							<label class="form-label semibold" for="numero">Número de Contrato:</label>
+							<input type="text" class="form-control" id="numero" name="numero" placeholder="No. de Contrato">
+						</fieldset>
+					</div>
+					<div class="col-lg-4">
+						<fieldset class="form-group">
+							<label class="form-label semibold" for="proveedor">Proveedor:</label>
+							<select id="exampleSelect" class="form-control">
+								<option>--Seleccione--</option>
+								<option>Juanito</option>
+								<option>Menganito</option>
+								<option>Perenganito</option>
+							</select>
+						</fieldset>
+					</div>
+					<div class="col-lg-4">
+						<fieldset class="form-group">
+						<label class="form-label semibold" for="proveedor">Tipo de Procedimiento:</label>
+								<select id="exampleSelect" class="form-control">
+								<option>--Seleccione--</option>
+								<option>Adjudicacion Directa</option>
+								<option>Invitación Restringida</option>
+								<option>Licitción Publica Nacional</option>
+								<option>Licitción Publica Internacional</option>
+							</select>
+						</fieldset>
+					</div>
+				
+								
+				</div><!--.row-->
+
+
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+					<fieldset class="form-group">
+						<label class="form-label semibold" for="proveedor">Tipo de Recurso:</label>
+								<select id="exampleSelect" class="form-control">
+								<option>--Seleccione--</option>
+								<option>Recursos Propios </option>
+								<option>Recursos Fiscales </option>
+								<option>Recurso Federal</option>
+								<option>Recurso Local</option>
+							</select>
+						</fieldset>
+					</div>
+				
+					<div class="col-md-4 col-sm-6">
+					<label class="form-label semibold" for="proveedor">Partida Presupuestal:</label>
+								<select id="exampleSelect" class="form-control">
+								<option>--Seleccione--</option>
+								<option>2000</option>
+								<option>3000</option>
+								<option>4000</option>
+								<option>5000</option>
+							</select>
+						</fieldset>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<fieldset class="form-group">
+							<label class="form-label semibold" for="importe">Importe Adjuducado:</label>
+							<input type="number" class="form-control" id="importe" name="importe" placeholder="Importe Adjudicado">
+						</fieldset>
+					</div>
+				</div><!--.row-->
+				<div class="row">
+					<div class="col-xs-12">
+						<label class="form-label semibold" for="importe">Concepto</label>
+						<textarea rows="4" class="form-control" placeholder="Objeto del contrato"></textarea>
+					</div>
+				</div><!--.row-->
+				<br>
+				<div class="row">
+					<div class="col-lg-4">
+						<fieldset class="form-group">
+							<label class="form-label semibold" for="inicio">Fecha de Inicio:</label>
+							<input type="date" class="form-control" id="inicio" name="inicio">
+						</fieldset>
+					</div>
+					<div class="col-lg-4">
+						<fieldset class="form-group">
+							<label class="form-label semibold" for="proveedor">Fecha de Termino:</label>
+							<input type="date" class="form-control" id="termino" name="termino">
+					</fieldset>
+					</div>
+					<div class="col-lg-4">
+						<fieldset class="form-group">
+						<label class="formfile" for="archivo">Documento:</label>
+						<input type="file" class="form-control" id="archivo" name="archivo">
+						</fieldset>
+					<button type="button" class="btn btn-danger">Cancelar</button>
+						<button type="submit" class="btn btn-success">Guardar</button>
 					</div>
 					
-					<div class="form-group row">
-						<label for="exampleSelect" class="col-sm-2 form-control-label">Proveedor</label>
-						<div class="col-sm-10">
-							<select id="exampleSelect" class="form-control">
-								<option>--Seleccione--</option>	
-								<option>Juan </option>
-								<option>Perenganito</option>
-								<option>Julanito</option>
-								<option>etc..</option>
-							</select>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="exampleSelect" class="col-sm-2 form-control-label">Tipo de Procedimiento</label>
-						<div class="col-sm-10">
-							<select id="exampleSelect" class="form-control">
-								<option>--Seleccione--</option>	
-								<option>Adjudicación Directa</option>
-								<option>Invitación Restringida</option>
-								<option>Licitación Publica Nacional</option>
-								<option>Licitación Publica Internacional</option>
-								</select>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="exampleSelect" class="col-sm-2 form-control-label">Tipo de Recurso</label>
-						<div class="col-sm-10">
-							<select id="exampleSelect" class="form-control">
-								<option>--Seleccione--</option>	
-								<option>Recursos Propios</option>
-								<option>Fiscales</option>
-								<option>Federal</option>
-						</select>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="exampleSelect" class="col-sm-2 form-control-label">Tipo de Contrato</label>
-						<div class="col-sm-10">
-							<select id="exampleSelect" class="form-control">
-								<option>--Seleccione--</option>	
-								<option>Abierto</option>
-								<option>Cerrado</option>
-						</select>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="exampleSelect" class="col-sm-2 form-control-label">Importe </label>
-						<div class="col-sm-10">
-							<select id="exampleSelect" class="form-control">
-								<option>--Seleccione--</option>	
-								<option>Recursos Propios</option>
-								<option>Fiscales</option>
-								<option>Federal</option>
-						</select>
-						</div>
-					</div>
+					</div><!--.row-->
 
 
-					<div class="form-group row">
-						<label class="col-sm-2 form-control-label">Número de Contrato</label>
-						<div class="col-sm-10">
-							<p class="form-control-static"><input type="number" class="form-control" id="importe" name="importe" placeholder="importe Adjudicado"></p>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="exampleSelect" class="col-sm-2 form-control-label">Concepto</label>
-						<div class="col-sm-10">
-							<textarea rows="4" class="form-control" placeholder="Concepto"></textarea>
-						</div>
-					</div>
-				</form>
-	</div>
-
-	
     <?php require_once("../MainJs/js.php"); ?>
 </div>
 </body>

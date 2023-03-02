@@ -1,4 +1,3 @@
-
 <nav class="side-menu">
 	<ul class="side-menu-list">
 	       <li class="blue-dirty">
@@ -22,9 +21,4 @@
 			</li>
 
 	</ul>
-
-
-
-
-
 	</nav><!--.side-menu-->
