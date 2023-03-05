@@ -16,104 +16,125 @@
     <?php require_once("../MainNav/nav.php");?>
 
 	<div class="page-content">
-		<header class="section-header">
-			<div class="tbl">
-				<div class="tbl-row">
-					<div class="tbl-cell">
-						<h3>Registrar Nuevo Proveedor</h3>
-						<ol class="breadcrumb breadcrumb-simple">
-						<li><a href="../Home/">Inicio</a></li>
+	<header class="section-header">
+				<div class="tbl">
+					<div class="tbl-row">
+						<div class="tbl-cell">
+							<h3>Registrar Nuevo Contrato</h3>
+							<ol class="breadcrumb breadcrumb-simple">
+								<li><a href="#">Inicio</a></li>
 								<li class="active">Contrato</li>
-						</ol>
+							</ol>
+						</div>
 					</div>
 				</div>
-			</div>
+	
+			</header>
+			<div class="box-typical box-typical-padding">
+				<p>
+					Desde esta ventana puede registrar un nuevo contato.
+				</p>
 
-		</header>
-		<div class="box-typical box-typical-padding">
-			<p>
-				Desde esta ventana puede registrar un nuevo Proveedor.
-			</p>
+				<h5 class="m-t-lg with-border">Registro de Contrato</h5>
 
-			<h5 class="m-t-lg with-border"></h5>
-			
-			<form action="index.php" method="POST" id="prov_form"> 
-						<div class="row">
-							<div class="col-lg-4">
-								<fieldset class="form-group">
-									<label class="form-label semibold" for="numero">Nombre y/o Razón Social:</label>
-									<input type="text" class="form-control" id="pro_nom" name="pro_nom" placeholder="Nombre y/o Razón Social">
-								</fieldset>
-						</div>
-						<div class="col-lg-4">
-								<fieldset class="form-group">
-									<label class="form-label semibold" for="numero">Correo:</label>
-									<input type="mail" class="form-control" id="pro_corr" name="pro_corr" placeholder="correo@gmail.com">
-								</fieldset>
-						</div>
-						<div class="col-lg-4">
-								<fieldset class="form-group">
-									<label class="form-label semibold" for="numero">RFC:</label>
-									<input type="text" class="form-control" id="pro_rfc" name="pro_rfc" placeholder="Registro Federal de Contribuyentes">
-								</fieldset>
-								</fieldset>
-						</div>
-						</div><!--.row-->
-						<div class="row">
-						<div class="col-lg-4">
-								<fieldset class="form-group">
-									<label class="form-label semibold" for="numero">Telefono del proveedor:</label>
-									<input type="text" class="form-control" id="pro_tel" name="pro_tel" placeholder="Telefono">
-								</fieldset>
-						</div><!--.row-->
-						<div class="col-lg-4">
+				<form>
+					<div class="row">
+					<div class="col-lg-4">
 						<fieldset class="form-group">
-						<label class="form-label semibold" for="numero">Deshabilitado:</label>
-						<input type="mail" class="form-control" disabled class="form-control" id="correo" name="correo" placeholder="Deshabilitado">
+							<label class="form-label semibold" for="numero">Número de Contrato:</label>
+							<input type="text" class="form-control" id="numero" name="numero" placeholder="No. de Contrato">
 						</fieldset>
-						</div>
-						<div class="col-lg-4">
+					</div>
+					<div class="col-lg-4">
 						<fieldset class="form-group">
-						<label class="form-label semibold" for="numero">Deshabilitado:</label>
-						<input type="text" class="form-control" disabled class="form-control" id="rfc" name="rfc" placeholder="Deshabilitado">
+							<label class="form-label semibold" for="proveedor">Proveedor:</label>
+							<select id="exampleSelect" class="form-control">
+								<option>--Seleccione--</option>
+								<option>Juanito</option>
+								<option>Menganito</option>
+								<option>Perenganito</option>
+							</select>
 						</fieldset>
-						</div>
-
+					</div>
+					<div class="col-lg-4">
+						<fieldset class="form-group">
+						<label class="form-label semibold" for="proveedor">Tipo de Procedimiento:</label>
+								<select id="exampleSelect" class="form-control">
+								<option>--Seleccione--</option>
+								<option>Adjudicacion Directa</option>
+								<option>Invitación Restringida</option>
+								<option>Licitción Publica Nacional</option>
+								<option>Licitción Publica Internacional</option>
+							</select>
+						</fieldset>
+					</div>
+				
+								
 				</div><!--.row-->
+
 
 				<div class="row">
-					<div class="col-lg-12">
-						<label class="form-label semibold" for="importe">Dirección</label>
-						<textarea rows="4" class="form-control"  id="pro_dir" name="pro_dir" placeholder="Dirección del Proveedor"></textarea>
-						<br>
-					</div>
-
-					<div class="col-lg-12">
-						<fieldset class="form-group">
-							<input type="hidden" name=act value="run">
-							<button type="submit" type="submit" class="btn btn-success">Guardar</button>
+					<div class="col-md-4 col-sm-6">
+					<fieldset class="form-group">
+						<label class="form-label semibold" for="proveedor">Tipo de Recurso:</label>
+								<select id="exampleSelect" class="form-control">
+								<option>--Seleccione--</option>
+								<option>Recursos Propios </option>
+								<option>Recursos Fiscales </option>
+								<option>Recurso Federal</option>
+								<option>Recurso Local</option>
+							</select>
 						</fieldset>
-
+					</div>
+				
+					<div class="col-md-4 col-sm-6">
+					<label class="form-label semibold" for="proveedor">Partida Presupuestal:</label>
+								<select id="exampleSelect" class="form-control">
+								<option>--Seleccione--</option>
+								<option>2000</option>
+								<option>3000</option>
+								<option>4000</option>
+								<option>5000</option>
+							</select>
+						</fieldset>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<fieldset class="form-group">
+							<label class="form-label semibold" for="importe">Importe Adjuducado:</label>
+							<input type="number" class="form-control" id="importe" name="importe" placeholder="Importe Adjudicado">
+						</fieldset>
+					</div>
+				</div><!--.row-->
+				<div class="row">
+					<div class="col-xs-12">
+						<label class="form-label semibold" for="importe">Concepto</label>
+						<textarea rows="4" class="form-control" placeholder="Objeto del contrato"></textarea>
+					</div>
+				</div><!--.row-->
+				<br>
+				<div class="row">
+					<div class="col-lg-4">
+						<fieldset class="form-group">
+							<label class="form-label semibold" for="inicio">Fecha de Inicio:</label>
+							<input type="date" class="form-control" id="inicio" name="inicio">
+						</fieldset>
+					</div>
+					<div class="col-lg-4">
+						<fieldset class="form-group">
+							<label class="form-label semibold" for="proveedor">Fecha de Termino:</label>
+							<input type="date" class="form-control" id="termino" name="termino">
+					</fieldset>
+					</div>
+					<div class="col-lg-4">
+						<fieldset class="form-group">
+						<label class="formfile" for="archivo">Documento:</label>
+						<input type="file" class="form-control" id="archivo" name="archivo">
+						</fieldset>
+					<button type="button" class="btn btn-danger">Cancelar</button>
+						<button type="submit" class="btn btn-success">Guardar</button>
 					</div>
 					
-					<?php 
-					
-					if(isset ($_POST['act']))
-					{
-						$pro_nom=$_POST['pro_nom'];
-						$pro_corr=$_POST['pro_corr'];
-						$pro_rfc=$_POST['pro_rfc'];
-						$pro_tel=$_POST['pro_tel'];
-						$pro_dir=$_POST['pro_dir'];
-
-						$sql="INSERT INTO tb_proveedor (id_prov,pro_nom,pro_corr,pro_rfc,pro_tel,pro_dir) VALUES ('$pro_nom','$pro_corr','$pro_rfc','$pro_tel','$pro_dir')";
-						$conectar($conexion,-$sql);
-					}
-					
-									
-					?>
-
-				</div><!--.row-->
+					</div><!--.row-->
 			</form>
 
     
