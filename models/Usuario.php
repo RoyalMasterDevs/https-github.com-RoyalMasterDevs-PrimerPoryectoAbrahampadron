@@ -4,7 +4,7 @@ class  Usuario extends Conectar
 
     public function login()
     {
-        $conectar = parent::conexion();
+        $conectar = parent::conexion(); /* funcion usuario*/
         parent::set_names();
         if (isset($_POST["enviar"])) {
             $correo = $_POST["usu_correo"];
@@ -33,3 +33,6 @@ class  Usuario extends Conectar
         }
     }
 }
+
+
+?>
