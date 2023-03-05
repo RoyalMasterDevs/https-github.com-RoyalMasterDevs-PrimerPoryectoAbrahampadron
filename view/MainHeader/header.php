@@ -12,13 +12,13 @@
         <button class="hamburger hamburger--htla">
             <span>toggle menu</span>
         </button>
-
+<!--  ID del Usuario-->
         <div class="site-header-content">
             <div class="site-header-content-in">
                 <div class="site-header-shown">
                     <div class="dropdown dropdown-notification notif">
                         <a href="../MntNotificacion/" class="header-alarm">
-                            <i class="font-icon-alarm"></i>
+                        <i class="font-icon-alarm"></i> 
                         </a>
                     </div>
                     <div class="dropdown user-menu">
@@ -39,7 +39,7 @@
                 <div class="dropdown dropdown-typical">
                     <a href="#" class="dropdown-toggle no-arr">
                         <span class="font-icon font-icon-user"></span>
-                        <span class="lblcontactonomx"><?php echo $_SESSION["usu_nom"] ?> <?php echo $_SESSION["usu_ape"] ?></span>
+                       <span class="lblcontactonomx"><?php echo $_SESSION["usu_nom"] ?> <?php echo $_SESSION["usu_ape"] ?></span>
 
                     </a>
                 </div>

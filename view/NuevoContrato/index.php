@@ -20,7 +20,7 @@
 				<div class="tbl">
 					<div class="tbl-row">
 						<div class="tbl-cell">
-							<h3>Registrar Nuevo Contrato</h3>
+							<h3>Registro de Contrato</h3>
 							<ol class="breadcrumb breadcrumb-simple">
 								<li><a href="#">Inicio</a></li>
 								<li class="active">Contrato</li>
@@ -32,10 +32,10 @@
 			</header>
 			<div class="box-typical box-typical-padding">
 				<p>
-					Desde esta ventana puede registrar un nuevo contato.
+					Desde esta ventana puede registrar un nuevo contrato.
 				</p>
 
-				<h5 class="m-t-lg with-border">Registro de Contrato</h5>
+				<h5 class="m-t-lg with-border"></h5>
 
 				<form>
 					<div class="row">
@@ -48,11 +48,7 @@
 					<div class="col-lg-4">
 						<fieldset class="form-group">
 							<label class="form-label semibold" for="proveedor">Proveedor:</label>
-							<select id="exampleSelect" class="form-control">
-								<option>--Seleccione--</option>
-								<option>Juanito</option>
-								<option>Menganito</option>
-								<option>Perenganito</option>
+							<select id="prov_id" class="form-control"></select>
 							</select>
 						</fieldset>
 					</div>
@@ -60,11 +56,8 @@
 						<fieldset class="form-group">
 						<label class="form-label semibold" for="proveedor">Tipo de Procedimiento:</label>
 								<select id="exampleSelect" class="form-control">
-								<option>--Seleccione--</option>
-								<option>Adjudicacion Directa</option>
-								<option>Invitación Restringida</option>
-								<option>Licitción Publica Nacional</option>
-								<option>Licitción Publica Internacional</option>
+								<select id="prov_id" class="form-control"></select>
+							
 							</select>
 						</fieldset>
 					</div>
@@ -140,7 +133,7 @@
     
     <?php require_once("../MainJs/js.php");?>
 
-	<script type="text/javascript" src="home.js"></script>
+	<script type="text/javascript" src="nuevocontrato.js"></script>
 
 	</body>
 </html>

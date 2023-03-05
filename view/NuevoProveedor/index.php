@@ -19,7 +19,7 @@
 			<div class="tbl">
 				<div class="tbl-row">
 					<div class="tbl-cell">
-						<h3>Registrar Nuevo Proveedor</h3>
+						<h3></h3>
 						<ol class="breadcrumb breadcrumb-simple">
 						<li><a href="../Home/">Inicio</a></li>
 								<li class="active">Contrato</li>

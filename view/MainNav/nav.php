@@ -2,8 +2,8 @@
 	<ul class="side-menu-list">
 	       <li class="blue-dirty">
 				<a href="..\home\">
-				<span class="glyphicon glyphicon-th"></span>
-	            	<span class="font-icon font-icon-dashboard"></span>
+				
+	            <span class="font-icon font-icon-dashboard"></span>
 	                <span class="lbl">Inicio</span>
 	            </a>
 			</li>

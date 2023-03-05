@@ -8,12 +8,13 @@
                case "combo": /*se crea un case un caso  */
                 $datos=$proveedor->get_proveedor(); /*se cre la variable datos */
                 if(is_array($datos)==true and count($datos)>0){ /*si la variable contiene datos  */
-                $html= "<option></option>";
+                $html= "<option>--Seleccione--</option>";
                     foreach($datos as $row)
                     {
-                        $html.= "<option value='".$row['id_prov']."'>".$row['pro_nom']."</option>";
+                        $html.= "<option value='".$row['prov_id']."'>".$row['pro_nom']."</option>";
                    }
                         echo $html;
                 }
             break; /*se cierra el case */
     }
+?>
