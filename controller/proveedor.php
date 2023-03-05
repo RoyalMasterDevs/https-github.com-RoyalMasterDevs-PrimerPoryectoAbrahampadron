@@ -1,5 +1,5 @@
 <?php
-/*abraham*/
+
         require_once("../config/conexion.php"); /*Se queriere la Cadena de Conexion */
         require_once("../models/Proveedor.php"); /*El modelo proveedor */
         $proveedor = new Proveedor(); /*Se crea la clase */
@@ -17,6 +17,3 @@
                 }
             break; /*se cierra el case */
     }
-
-
-?>
