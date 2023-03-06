@@ -1,38 +1,12 @@
-
-function init(){
-    $("#form_contrato").on("submit",function(e){
-        guardaryeditar(e);
-    });
-}
-
 $(document).ready(function() {
     /* Inicializar Summernote */
-    $('#con_des').summernote({
+    $('#descrip').summernote({
         height: 150
     });
     $.post("../../controller/proveedor.php?op=combo",function(data, status){
-        $('#nuevocontrato.js').html(data);
-          
+        $('#prov_id').html(data);
+        console.log(data);
     });
-
-function guardaryeditar(e){
-    e.preventDefault();
-        var formData = new formData($("#form_contrato")[0]);
-        $.ajax({
-            url: "../../controller/contrato.php?op=insert",
-            type: "POST",
-            data: formData,
-            contentType: false,
-            processData: false,
-            success: function(data){
-                console.log(data);
-                data = JSON.parse(data);
-                console.log(data[0].tick_id);
-        }
-    });
-
-}
-init();
 
 
 });
