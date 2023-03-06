@@ -49,62 +49,17 @@
 						<fieldset class="form-group">
 							<label class="form-label semibold" for="prov_id">Proveedor:</label>
 							<select id="exampleSelect" class="form-control">
-							<select id="prov_id" class="form-control">
+							<select id="prov_id" name="prov_id"class="form-control">
 							
 
 
 							</select>
 						</fieldset>
 					</div>
-					<div class="col-lg-4">
-						<fieldset class="form-group">
-						<label class="form-label semibold" for="proveedor">Tipo de Procedimiento:</label>
-								<select id="exampleSelect" class="form-control">
-								<option>--Seleccione--</option>
-								<option>Adjudicacion Directa</option>
-								<option>Invitación Restringida</option>
-								<option>Licitción Publica Nacional</option>
-								<option>Licitción Publica Internacional</option>
-							</select>
-						</fieldset>
-					</div>
-				
+					
 								
-				</div><!--.row-->
+		
 
-
-				<div class="row">
-					<div class="col-md-4 col-sm-6">
-					<fieldset class="form-group">
-						<label class="form-label semibold" for="proveedor">Tipo de Recurso:</label>
-								<select id="exampleSelect" class="form-control">
-								<option>--Seleccione--</option>
-								<option>Recursos Propios </option>
-								<option>Recursos Fiscales </option>
-								<option>Recurso Federal</option>
-								<option>Recurso Local</option>
-							</select>
-						</fieldset>
-					</div>
-				
-					<div class="col-md-4 col-sm-6">
-					<label class="form-label semibold" for="proveedor">Partida Presupuestal:</label>
-								<select id="exampleSelect" class="form-control">
-								<option>--Seleccione--</option>
-								<option>2000</option>
-								<option>3000</option>
-								<option>4000</option>
-								<option>5000</option>
-							</select>
-						</fieldset>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<fieldset class="form-group">
-							<label class="form-label semibold" for="importe">Importe Adjuducado:</label>
-							<input type="number" class="form-control" id="importe" name="importe" placeholder="Importe Adjudicado">
-						</fieldset>
-					</div>
-				</div><!--.row-->
 				<div class="col-lg-12">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="tick_descrip">Descripción</label>
@@ -113,24 +68,9 @@
 								</div>
 							</fieldset>
 				</div><!--.row-->
-				<br>
-				<div class="row">
-					<div class="col-lg-4">
-						<fieldset class="form-group">
-							<label class="form-label semibold" for="inicio">Fecha de Inicio:</label>
-							<input type="date" class="form-control" id="inicio" name="inicio">
-						</fieldset>
-					</div>
-					<div class="col-lg-4">
-						<fieldset class="form-group">
-							<label class="form-label semibold" for="proveedor">Fecha de Termino:</label>
-							<input type="date" class="form-control" id="termino" name="termino">
-					</fieldset>
-					</div>
-					<div class="col-lg-4">
-						<fieldset class="form-group">
-						<label class="formfile" for="archivo">Documento:</label>
-						<input type="file" class="form-control" id="archivo" name="archivo">
+				
+
+
 						</fieldset>
 						<div class="col-lg-12">
 							<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
