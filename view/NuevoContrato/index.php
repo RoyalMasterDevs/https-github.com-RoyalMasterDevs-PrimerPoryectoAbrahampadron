@@ -101,7 +101,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<label class="form-label semibold" for="importe">Concepto</label>
-						<textarea rows="4" class="form-control" placeholder="Objeto del contrato"></textarea>
+						<textarea id="descrip" name="descrip" class="summernote" name="name"></textarea>
 					</div>
 				</div><!--.row-->
 				<br>
@@ -123,12 +123,13 @@
 						<label class="formfile" for="archivo">Documento:</label>
 						<input type="file" class="form-control" id="archivo" name="archivo">
 						</fieldset>
-					<button type="button" class="btn btn-danger">Cancelar</button>
-						<button type="submit" class="btn btn-success">Guardar</button>
-					</div>
+						<div class="col-lg-12">
+							<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
+						</div>
+					</form>
 					
 					</div><!--.row-->
-			</form>
+
 
     
     <?php require_once("../MainJs/js.php");?>
