@@ -37,12 +37,12 @@
 
 				<h5 class="m-t-lg with-border"></h5>
 
-				<form>
-					<div class="row">
+				<form mwthod="post" id="contrato_form">
+				<div class="row">
 					<div class="col-lg-4">
 						<fieldset class="form-group">
-							<label class="form-label semibold" for="numero">Número de Contrato:</label>
-							<input type="text" class="form-control" id="numero" name="numero" placeholder="No. de Contrato">
+							<label class="form-label semibold" for="con_numero">Número de Contrato:</label>
+							<input type="text" class="form-control" id="con_numero" name="con_numero" placeholder="No. de Contrato">
 						</fieldset>
 					</div>
 					<div class="col-lg-4">
@@ -52,7 +52,7 @@
 							</select>
 						</fieldset>
 					</div>
-					<div class="col-lg-4">
+			<!---		<div class="col-lg-4">
 						<fieldset class="form-group">
 						<label class="form-label semibold" for="proveedor">Tipo de Procedimiento:</label>
 								<select id="exampleSelect" class="form-control">
@@ -60,10 +60,10 @@
 							
 							</select>
 						</fieldset>
-					</div>
-				
+					</div>.row-->
+				<!---
 								
-				</div><!--.row-->
+				</div>
 
 
 				<div class="row">
@@ -97,13 +97,13 @@
 							<input type="number" class="form-control" id="importe" name="importe" placeholder="Importe Adjudicado">
 						</fieldset>
 					</div>
-				</div><!--.row-->
+				</div> row-->
 				<div class="row">
 					<div class="col-xs-12">
-						<label class="form-label semibold" for="importe">Concepto</label>
-						<textarea id="descrip" name="descrip" class="summernote" name="name"></textarea>
+						<label class="form-label semibold" for="con_des">Concepto</label>
+						<textarea id="descrip" name="con_des" class="summernote" name="con_des"></textarea>
 					</div>
-				</div><!--.row-->
+				<!--.row</div>
 				<br>
 				<div class="row">
 					<div class="col-lg-4">
@@ -122,13 +122,13 @@
 						<fieldset class="form-group">
 						<label class="formfile" for="archivo">Documento:</label>
 						<input type="file" class="form-control" id="archivo" name="archivo">
-						</fieldset>
+						</fieldset> 	</div>-->
 						<div class="col-lg-12">
 							<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
 						</div>
 					</form>
 					
-					</div><!--.row-->
+				
 
 
     

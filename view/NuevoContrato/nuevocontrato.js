@@ -1,11 +1,11 @@
 $(document).ready(function() {
     /* Inicializar Summernote */
-    $('#descrip').summernote({
+    $('#con_des').summernote({
         height: 150
     });
     $.post("../../controller/proveedor.php?op=combo",function(data, status){
         $('#prov_id').html(data);
-        console.log(data);
+       
     });
 
 
