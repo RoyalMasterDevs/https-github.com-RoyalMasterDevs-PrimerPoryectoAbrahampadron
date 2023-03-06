@@ -19,10 +19,10 @@
 			<div class="tbl">
 				<div class="tbl-row">
 					<div class="tbl-cell">
-						<h3></h3>
+						<h3>Proveedor</h3>
 						<ol class="breadcrumb breadcrumb-simple">
 						<li><a href="../Home/">Inicio</a></li>
-								<li class="active">Contrato</li>
+						<li><a href="../NuevoContrato/index.php">Contrato</a></li>
 						</ol>
 					</div>
 				</div>
@@ -88,32 +88,13 @@
 					</div>
 
 					<div class="col-lg-12">
-						<fieldset class="form-group">
-							<input type="hidden" name=act value="run">
-							<button type="submit" type="submit" class="btn btn-success">Guardar</button>
-						</fieldset>
-
-					</div>
+							<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
+						</div>
 					
-					<?php 
-					
-					if(isset ($_POST['act']))
-					{
-						$pro_nom=$_POST['pro_nom'];
-						$pro_corr=$_POST['pro_corr'];
-						$pro_rfc=$_POST['pro_rfc'];
-						$pro_tel=$_POST['pro_tel'];
-						$pro_dir=$_POST['pro_dir'];
-
-						$sql="INSERT INTO tb_proveedor (id_prov,pro_nom,pro_corr,pro_rfc,pro_tel,pro_dir) VALUES ('$pro_nom','$pro_corr','$pro_rfc','$pro_tel','$pro_dir')";
-						$conectar($conexion,-$sql);
-					}
-					
-									
-					?>
-
-				</div><!--.row-->
+			
+						</div><!--.row-->
 			</form>
+
 
 			<?php require_once("../MainJs/js.php"); ?>
 

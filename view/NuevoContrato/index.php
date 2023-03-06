@@ -20,10 +20,10 @@
 				<div class="tbl">
 					<div class="tbl-row">
 						<div class="tbl-cell">
-							<h3>Registro de Contrato</h3>
+							<h3>Contrato</h3>
 							<ol class="breadcrumb breadcrumb-simple">
 								<li><a href="#">Inicio</a></li>
-								<li class="active">Contrato</li>
+								<li><a href="../NuevoProveedor/index.php">Proveedor</a></li>
 							</ol>
 						</div>
 					</div>
@@ -32,23 +32,27 @@
 			</header>
 			<div class="box-typical box-typical-padding">
 				<p>
-					Desde esta ventana puede registrar un nuevo contrato.
+					Desde esta ventana puede registrar un nuevo contato.
 				</p>
 
 				<h5 class="m-t-lg with-border"></h5>
 
-				<form>
+				<form method="POST" id="form_contrato">
 					<div class="row">
 					<div class="col-lg-4">
 						<fieldset class="form-group">
-							<label class="form-label semibold" for="numero">Número de Contrato:</label>
-							<input type="text" class="form-control" id="numero" name="numero" placeholder="No. de Contrato">
+							<label class="form-label semibold" for="con_numero">Número de Contrato:</label>
+							<input type="text" class="form-control" id="con_numero" name="con_numero" placeholder="No. de Contrato">
 						</fieldset>
 					</div>
 					<div class="col-lg-4">
 						<fieldset class="form-group">
-							<label class="form-label semibold" for="proveedor">Proveedor:</label>
-							<select id="prov_id" class="form-control"></select>
+							<label class="form-label semibold" for="prov_id">Proveedor:</label>
+							<select id="exampleSelect" class="form-control">
+							<select id="prov_id" class="form-control">
+							
+
+
 							</select>
 						</fieldset>
 					</div>
@@ -56,8 +60,11 @@
 						<fieldset class="form-group">
 						<label class="form-label semibold" for="proveedor">Tipo de Procedimiento:</label>
 								<select id="exampleSelect" class="form-control">
-								<select id="prov_id" class="form-control"></select>
-							
+								<option>--Seleccione--</option>
+								<option>Adjudicacion Directa</option>
+								<option>Invitación Restringida</option>
+								<option>Licitción Publica Nacional</option>
+								<option>Licitción Publica Internacional</option>
 							</select>
 						</fieldset>
 					</div>
@@ -98,11 +105,13 @@
 						</fieldset>
 					</div>
 				</div><!--.row-->
-				<div class="row">
-					<div class="col-xs-12">
-						<label class="form-label semibold" for="importe">Concepto</label>
-						<textarea rows="4" class="form-control" placeholder="Objeto del contrato"></textarea>
-					</div>
+				<div class="col-lg-12">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="tick_descrip">Descripción</label>
+								<div class="summernote-theme-1">
+									<textarea id="con_des" name="con_des" class="summernote" name="name"></textarea>
+								</div>
+							</fieldset>
 				</div><!--.row-->
 				<br>
 				<div class="row">
@@ -123,9 +132,9 @@
 						<label class="formfile" for="archivo">Documento:</label>
 						<input type="file" class="form-control" id="archivo" name="archivo">
 						</fieldset>
-					<button type="button" class="btn btn-danger">Cancelar</button>
-						<button type="submit" class="btn btn-success">Guardar</button>
-					</div>
+						<div class="col-lg-12">
+							<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
+						</div>
 					
 					</div><!--.row-->
 			</form>
@@ -134,6 +143,8 @@
     <?php require_once("../MainJs/js.php");?>
 
 	<script type="text/javascript" src="nuevocontrato.js"></script>
+	
+	
 
 	</body>
 </html>

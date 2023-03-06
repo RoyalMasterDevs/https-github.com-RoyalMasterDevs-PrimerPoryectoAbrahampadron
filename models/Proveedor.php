@@ -1,18 +1,20 @@
 <?php
-    class  Proveedor extends Conectar{
 
-        public function get_proveedor(){ /* funcion Proveedor*/
-            $conectar = parent::conexion(); /* funcion se prepara la conexion*/
-            parent::set_names(); /* funcion se prepara la conexion*/
-            $sql = "SELECT * FROM tb_proveedor WHERE prov_est=1;"; /* Sentencia SQL*/
-            $sql = $conectar->prepare($sql); /* Se prepara la conexión*/
-            $sql->execute(); /* Se ejecuta el SQL*/
-            return $resultado=$sql->fetchAll(); /* Se muestra el resultado o se retorana*/
+        require_once("../config/conexion.php"); /*Se queriere la Cadena de Conexion */
+        require_once("../models/Proveedor.php"); /*El modelo proveedor */
+        $proveedor = new Proveedor(); /*Se crea la clase */
+
+        switch($_GET["op"]){  /*se cerea un swich */
+               case "combo": /*se crea un case un caso  */
+                $datos=$proveedor->get_proveedor(); /*se cre la variable datos */
+                if(is_array($datos)==true and count($datos)>0){ /*si la variable contiene datos  */
+                $html= "<option>Selecc</option>";
+                    foreach($datos as $row)
+                    {
+                        $html.= "<option value='".$row['prov_id']."'>".$row['prov_nom']."</option>";
+                   }
+                        echo $html;
+                }
+            break; /*se cierra el case */
     }
-}
-
-
-
 ?>
-       
-    

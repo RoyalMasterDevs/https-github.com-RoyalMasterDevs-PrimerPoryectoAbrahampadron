@@ -11,7 +11,7 @@
                 $html= "<option>--Seleccione--</option>";
                     foreach($datos as $row)
                     {
-                        $html.= "<option value='".$row['prov_id']."'>".$row['pro_nom']."</option>";
+                        $html.= "<option value='".$row['prov_id']."'>".$row['prov_nom']."</option>";
                    }
                         echo $html;
                 }
