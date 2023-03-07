@@ -1,5 +1,5 @@
 <?php
-    class  Proveedor extends Conectar{
+      class  Proveedor extends Conectar{
 
         public function get_proveedor(){ /* funcion Proveedor*/
             $conectar= parent::conexion(); /* funcion se prepara la conexion*/
@@ -8,9 +8,6 @@
             $sql = $conectar->prepare($sql); /* Se prepara la conexión*/
             $sql->execute(); /* Se ejecuta el SQL*/
             return $resultado=$sql->fetchAll(); /* Se muestra el resultado o se retorana*/
+         }
     }
-}
-
-
-
 ?>

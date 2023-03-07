@@ -1,3 +1,7 @@
+<?php
+  require_once("../../config/conexion.php"); 
+  if(isset($_SESSION["usu_id"])){ 
+?>
 
 <body class="with-side-menu">
 
@@ -36,15 +40,15 @@
 
 			<h5 class="m-t-lg with-border"></h5>
 			
-			<form action="index.php" method="POST" id="prov_form"> 
+			<form method="post" id="proveedor_form"> 
 						<div class="row">
 							<div class="col-lg-4">
 								<fieldset class="form-group">
-									<label class="form-label semibold" for="numero">Nombre y/o Razón Social:</label>
+									<label class="form-label semibold" for="proveedor_form">Nombre y/o Razón Social:</label>
 									<input type="text" class="form-control" id="pro_nom" name="pro_nom" placeholder="Nombre y/o Razón Social">
 								</fieldset>
 						</div>
-						<div class="col-lg-4">
+				<!--		<div class="col-lg-4">
 								<fieldset class="form-group">
 									<label class="form-label semibold" for="numero">Correo:</label>
 									<input type="mail" class="form-control" id="pro_corr" name="pro_corr" placeholder="correo@gmail.com">
@@ -57,14 +61,14 @@
 								</fieldset>
 								</fieldset>
 						</div>
-						</div><!--.row-->
+						</div> 
 						<div class="row">
 						<div class="col-lg-4">
 								<fieldset class="form-group">
 									<label class="form-label semibold" for="numero">Telefono del proveedor:</label>
 									<input type="text" class="form-control" id="pro_tel" name="pro_tel" placeholder="Telefono">
 								</fieldset>
-						</div><!--.row-->
+						</div>
 						<div class="col-lg-4">
 						<fieldset class="form-group">
 						<label class="form-label semibold" for="numero">Deshabilitado:</label>
@@ -78,28 +82,35 @@
 						</fieldset>
 						</div>
 
-				</div><!--.row-->
+				</div> 
 
 				<div class="row">
 					<div class="col-lg-12">
 						<label class="form-label semibold" for="importe">Dirección</label>
 						<textarea rows="4" class="form-control"  id="pro_dir" name="pro_dir" placeholder="Dirección del Proveedor"></textarea>
 						<br>
-					</div>
+					</div> row-->
 
 					<div class="col-lg-12">
-							<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
+					<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
 						</div>
 					
 			
-						</div><!--.row-->
+						</div>
 			</form>
 
 
-			<?php require_once("../MainJs/js.php"); ?>
+			<?php require_once("../MainJs/js.php");?>
 
-		
-		</div>
+<script type="text/javascript" src="nuevoproveedor.js"></script>
+
+
+
 </body>
-
 </html>
+
+<?php
+} else {
+header("Location:".Conectar::ruta()."index.php");
+}
+?>
