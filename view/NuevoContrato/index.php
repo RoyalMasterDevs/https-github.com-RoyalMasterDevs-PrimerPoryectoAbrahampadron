@@ -4,7 +4,7 @@
 ?>
 <!DOCTYPE html>
 <html>
-<?php require_once("../MainHead/head.php"); ?>
+<?php require_once("../MainHead/head.php");?>
 	<title>Registro de Contratos y Pagos: Home</title>
 </head>
 <body class="with-side-menu">
@@ -22,116 +22,91 @@
 						<div class="tbl-cell">
 							<h3>Contrato</h3>
 							<ol class="breadcrumb breadcrumb-simple">
-								<li><a href="#">Inicio</a></li>
+								<li><a href="../home/index.php">Inicio</a></li>
 								<li><a href="../NuevoProveedor/index.php">Proveedor</a></li>
 							</ol>
 						</div>
 					</div>
 				</div>
 	
-			</header>
+	</header>
 			<div class="box-typical box-typical-padding">
-								<p>
+				<p>
 					Desde esta ventana puede registrar un nuevo contrato.
 				</p>
 
 				<h5 class="m-t-lg with-border"></h5>
+				<div class="row">
+					<form method="post" id="ticket_form">
 
-				<form mwthod="post" id="contrato_form">
-				<div class="row">
-					<div class="col-lg-4">
-						<fieldset class="form-group">
-							<label class="form-label semibold" for="con_numero">Número de Contrato:</label>
-							<input type="text" class="form-control" id="con_numero" name="con_numero" placeholder="No. de Contrato">
-						</fieldset>
-					</div>
-					<div class="col-lg-4">
-						<fieldset class="form-group">
-							<label class="form-label semibold" for="proveedor">Proveedor:</label>
-							<select id="prov_id" class="form-control"></select>
-							</select>
-						</fieldset>
-					</div>
-			<!---		<div class="col-lg-4">
-						<fieldset class="form-group">
-						<label class="form-label semibold" for="proveedor">Tipo de Procedimiento:</label>
-								<select id="exampleSelect" class="form-control">
-								<select id="prov_id" class="form-control"></select>
-							
-							</select>
-						</fieldset>
-					</div>.row-->
-				<!---
-								
-				</div>
+						<input type="hidden" id="usu_id" name="usu_id" value="<?php echo $_SESSION["usu_id"] ?>">
 
+						<div class="col-lg-12">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="con_numero">No. de Contato</label>
+								<input type="text" class="form-control" id="con_numero" name="con_numero" placeholder="Ingrese Titulo">
+							</fieldset>
+						</div>
 
-				<div class="row">
-					<div class="col-md-4 col-sm-6">
-					<fieldset class="form-group">
-						<label class="form-label semibold" for="proveedor">Tipo de Recurso:</label>
-								<select id="exampleSelect" class="form-control">
-								<option>--Seleccione--</option>
-								<option>Recursos Propios </option>
-								<option>Recursos Fiscales </option>
-								<option>Recurso Federal</option>
-								<option>Recurso Local</option>
-							</select>
-						</fieldset>
-					</div>
-				
-					<div class="col-md-4 col-sm-6">
-					<label class="form-label semibold" for="proveedor">Partida Presupuestal:</label>
-								<select id="exampleSelect" class="form-control">
-								<option>--Seleccione--</option>
-								<option>2000</option>
-								<option>3000</option>
-								<option>4000</option>
-								<option>5000</option>
-							</select>
-						</fieldset>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<fieldset class="form-group">
-							<label class="form-label semibold" for="importe">Importe Adjuducado:</label>
-							<input type="number" class="form-control" id="importe" name="importe" placeholder="Importe Adjudicado">
-						</fieldset>
-					</div>
-				</div> row-->
-				<div class="row">
-					<div class="col-xs-12">
-						<label class="form-label semibold" for="con_des">Concepto</label>
-						<textarea id="descrip" name="con_des" class="summernote" name="con_des"></textarea>
-					</div>
-				<!--.row</div>
-				<br>
-				<div class="row">
-					<div class="col-lg-4">
-						<fieldset class="form-group">
-							<label class="form-label semibold" for="inicio">Fecha de Inicio:</label>
-							<input type="date" class="form-control" id="inicio" name="inicio">
-						</fieldset>
-					</div>
-					<div class="col-lg-4">
-						<fieldset class="form-group">
-							<label class="form-label semibold" for="proveedor">Fecha de Termino:</label>
-							<input type="date" class="form-control" id="termino" name="termino">
-					</fieldset>
-					</div>
-					<div class="col-lg-4">
-						<fieldset class="form-group">
-						<label class="formfile" for="archivo">Documento:</label>
-						<input type="file" class="form-control" id="archivo" name="archivo">
-						</fieldset> 	</div>-->
+						<div class="col-lg-6">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="exampleInput">Proveedor</label>
+								<select id="prov_id" name="prov_id" class="form-control">
+
+								</select>
+							</fieldset>
+						</div>
+
+						<!--<div class="col-lg-6">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="exampleInput">SubCategoria</label>
+								<select id="prov_id" name="prov_id" class="form-control">
+
+								</select>
+							</fieldset>
+						</div> -->
+
+						<!--<div class="col-lg-6">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="exampleInput">Prioridad</label>
+								<select id="prio_id" name="prio_id" class="form-control">
+
+								</select>
+							</fieldset>
+						</div> -->
+
+						<!--<div class="col-lg-6">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="exampleInput">Documentos Adicionales</label>
+								<input type="file" name="fileElem" id="fileElem" class="form-control" multiple>
+							</fieldset>
+						</div>-->
+
+						<div class="col-lg-12">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="con_descrip">Descripción</label>
+								<div class="summernote-theme-1">
+									<textarea id="con_descrip" name="con_descrip" class="summernote" name="name"></textarea>
+								</div>
+							</fieldset>
+						</div>
 						<div class="col-lg-12">
 							<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
 						</div>
 					</form>
-					
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- Contenido -->
 				
 
 
-    
+
+
+
+
     <?php require_once("../MainJs/js.php");?>
 
 	<script type="text/javascript" src="nuevocontrato.js"></script>
@@ -140,8 +115,9 @@
 
 	</body>
 </html>
+
 <?php
-  } else {
+} else {
     header("Location:".Conectar::ruta()."index.php");
   }
 ?>
