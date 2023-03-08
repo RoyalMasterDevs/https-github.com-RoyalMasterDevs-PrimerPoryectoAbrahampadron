@@ -2,6 +2,8 @@
 function init(){
     $("#contrato_form").on("submit",function(e){
         guardaryeditar(e);
+    
+    
     });
 
 }
@@ -9,7 +11,26 @@ function init(){
 $(document).ready(function() {
       $("#con_descrip").summernote({
         height: 150,
+        lang: "es-ES",
+        popover: {
+            onImageUpload: function(image) {
+                console.log("Image detect...");
+                myimagetreat(image[0]);
+            },
+            onPaste: function (e) {
+                console.log("Text detect...");
+            }
+        },
+        toolbar: [
+            ['style', ['bold', 'italic', 'underline', 'clear']],
+            ['font', ['strikethrough', 'superscript', 'subscript']],
+            ['fontsize', ['fontsize']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['height', ['height']]
+        ]
     });
+
 
     $.post("../../controller/proveedor.php?op=combo",function(data, status){
         $("#prov_id").html(data);
@@ -25,8 +46,8 @@ $(document).ready(function() {
             data: formData,
             contentType: false,
             processData: false,
-            success: function(data){
-                console.log(data);
+            success: function(datos){
+                console.log(datos);
             }
             
             });
