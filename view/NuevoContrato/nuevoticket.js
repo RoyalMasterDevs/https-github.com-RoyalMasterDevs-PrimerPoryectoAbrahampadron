@@ -26,7 +26,10 @@ $(document).ready(function() {
             contentType: false,
             processData: false,
             success: function(datos){
-                console.log(datos);
+                $('#tick_titulo').val('');
+                $('#tick_descrip').summernote('reset');
+           
+                swal("Correcto!", "Registrado Correctamente", "success");
             }
             });
     }

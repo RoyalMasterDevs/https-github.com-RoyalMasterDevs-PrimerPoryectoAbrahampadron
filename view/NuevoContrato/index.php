@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
     <?php require_once("../MainHead/head.php");?>
-	<title>AnderCode</>::Nuevo Ticket</title>
+	<title>Plataforma de Pagos y Servicio</title>
 </head>
 <body class="with-side-menu">
 
@@ -47,14 +47,14 @@
 
 						<div class="col-lg-12">
 							<fieldset class="form-group">
-								<label class="form-label semibold" for="tick_titulo">Titulo</label>
+								<label class="form-label semibold" for="tick_titulo">Numero de Contrato:</label>
 								<input type="text" class="form-control" id="tick_titulo" name="tick_titulo" placeholder="Ingrese Titulo">
 							</fieldset>
 						</div>
 
 						<div class="col-lg-6">
 							<fieldset class="form-group">
-								<label class="form-label semibold" for="exampleInput">Categoria</label>
+								<label class="form-label semibold" for="exampleInput">Proveedor:</label>
 								<select id="cat_id" name="cat_id" class="form-control">
 
 								</select>
