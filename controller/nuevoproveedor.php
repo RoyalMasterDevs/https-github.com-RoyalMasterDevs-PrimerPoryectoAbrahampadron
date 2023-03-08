@@ -5,7 +5,7 @@
 
         switch($_GET["op"]){ 
          case "insert":
-                $nuevoproveedor->insert_nuevoproveedor($_POST["$prov_nom"]); /*se cre la variable datos */
+                $nuevoproveedor->insert_nuevoproveedor($_POST["prov_id"],$_POST["prov_nom"],$_POST["prov_est"]); 
         break; 
         }
 ?>

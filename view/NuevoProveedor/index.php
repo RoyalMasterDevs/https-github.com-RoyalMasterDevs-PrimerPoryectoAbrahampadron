@@ -48,7 +48,7 @@
 									<input type="text" class="form-control" id="pro_nom" name="pro_nom" placeholder="Nombre y/o Razón Social">
 								</fieldset>
 						</div>
-				<!--		<div class="col-lg-4">
+				<div class="col-lg-4">
 								<fieldset class="form-group">
 									<label class="form-label semibold" for="numero">Correo:</label>
 									<input type="mail" class="form-control" id="pro_corr" name="pro_corr" placeholder="correo@gmail.com">
@@ -89,7 +89,7 @@
 						<label class="form-label semibold" for="importe">Dirección</label>
 						<textarea rows="4" class="form-control"  id="pro_dir" name="pro_dir" placeholder="Dirección del Proveedor"></textarea>
 						<br>
-					</div> row-->
+					</div>
 
 					<div class="col-lg-12">
 					<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
@@ -98,7 +98,12 @@
 			
 						</div>
 			</form>
-
+		</div>
+		</div>
+		</div>
+	</div>
+	</div>
+</div>
 
 			<?php require_once("../MainJs/js.php");?>
 

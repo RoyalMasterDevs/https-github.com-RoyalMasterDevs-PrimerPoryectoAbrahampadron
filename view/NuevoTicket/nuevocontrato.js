@@ -47,7 +47,11 @@ $(document).ready(function() {
             contentType: false,
             processData: false,
             success: function(datos){
-                console.log(datos);
+            $('#tick_titulo').val('');
+            $('#con_descrip').summernote('reset');
+                /* TODO: Alerta de Confirmacion */
+
+            swal("Correcto!", "Registrado Correctamente", "success");
             }
             
             });

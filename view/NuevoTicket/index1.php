@@ -56,31 +56,32 @@
 								</select>
 							</fieldset>
 						</div>
-
-						<!--<div class="col-lg-6">
+						<!-- 
+						<div class="col-lg-6">
 							<fieldset class="form-group">
-								<label class="form-label semibold" for="exampleInput">SubCategoria</label>
+								<label class="form-label semibold" for="exampleInput">Tipo de Recurso:</label>
 								<select id="prov_id" name="prov_id" class="form-control">
-
+	
 								</select>
 							</fieldset>
-						</div> -->
-
-						<!--<div class="col-lg-6">
+						</div> 
+	
+						<div class="col-lg-6">
 							<fieldset class="form-group">
-								<label class="form-label semibold" for="exampleInput">Prioridad</label>
+								<label class="form-label semibold" for="exampleInput">Tipo de Procedimiento:</label>
 								<select id="prio_id" name="prio_id" class="form-control">
-
+	
 								</select>
 							</fieldset>
-						</div> -->
+						</div>  -->
 
-						<!--<div class="col-lg-6">
+
+						<!-- <div class="col-lg-6">
 							<fieldset class="form-group">
-								<label class="form-label semibold" for="exampleInput">Documentos Adicionales</label>
+								<label class="form-label semibold" for="exampleInput">Documentos </label>
 								<input type="file" name="fileElem" id="fileElem" class="form-control" multiple>
 							</fieldset>
-						</div>-->
+						</div> -->
 
 						<div class="col-lg-12">
 							<fieldset class="form-group">
