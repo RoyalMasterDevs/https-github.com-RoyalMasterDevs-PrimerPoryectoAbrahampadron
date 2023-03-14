@@ -1,5 +1,4 @@
 <?php
-
   require_once("../../config/conexion.php"); 
   if(isset($_SESSION["usu_id"])){ 
 ?>
@@ -9,8 +8,6 @@
 	<?php require_once("../MainHead/head.php"); ?>
 	
 	<?php require_once("../MainJs/js.php"); ?>
-	
-	<div class="mobile-menu-left-overlay"></div>
 	
 	<?php require_once("../../config/conexion.php"); ?>
 
@@ -32,86 +29,55 @@
 					</div>
 				</div>
 			</div>
-
 		</header>
 		<div class="box-typical box-typical-padding">
-			<p>
-				Desde esta ventana puede registrar un nuevo Proveedor.
-			</p>
+				<p>
+					Desde esta ventana podra registrar un Nuevo Proveedor.
+				</p>
 
-			<h5 class="m-t-lg with-border"></h5>
-			
-			<form method="post" id="proveedor_form"> 
-						<div class="row">
-							<div class="col-lg-4">
-								<fieldset class="form-group">
-									<label class="form-label semibold" for="proveedor_form">Nombre y/o Razón Social:</label>
-									<input type="text" class="form-control" id="pro_nom" name="pro_nom" placeholder="Nombre y/o Razón Social">
-								</fieldset>
-						</div>
-				<div class="col-lg-4">
-								<fieldset class="form-group">
-									<label class="form-label semibold" for="numero">Correo:</label>
-									<input type="mail" class="form-control" id="pro_corr" name="pro_corr" placeholder="correo@gmail.com">
-								</fieldset>
-						</div>
-						<div class="col-lg-4">
-								<fieldset class="form-group">
-									<label class="form-label semibold" for="numero">RFC:</label>
-									<input type="text" class="form-control" id="pro_rfc" name="pro_rfc" placeholder="Registro Federal de Contribuyentes">
-								</fieldset>
-								</fieldset>
-						</div>
-						</div> 
-						<div class="row">
-						<div class="col-lg-4">
-								<fieldset class="form-group">
-									<label class="form-label semibold" for="numero">Telefono del proveedor:</label>
-									<input type="text" class="form-control" id="pro_tel" name="pro_tel" placeholder="Telefono">
-								</fieldset>
-						</div>
-						<div class="col-lg-4">
-						<fieldset class="form-group">
-						<label class="form-label semibold" for="numero">Deshabilitado:</label>
-						<input type="mail" class="form-control" disabled class="form-control" id="correo" name="correo" placeholder="Deshabilitado">
-						</fieldset>
-						</div>
-						<div class="col-lg-4">
-						<fieldset class="form-group">
-						<label class="form-label semibold" for="numero">Deshabilitado:</label>
-						<input type="text" class="form-control" disabled class="form-control" id="rfc" name="rfc" placeholder="Deshabilitado">
-						</fieldset>
-						</div>
-
-				</div> 
-
+				<h5 class="m-t-lg with-border">Ingresar Información</h5>
+				
 				<div class="row">
-					<div class="col-lg-12">
-						<label class="form-label semibold" for="importe">Dirección</label>
-						<textarea rows="4" class="form-control"  id="pro_dir" name="pro_dir" placeholder="Dirección del Proveedor"></textarea>
-						<br>
-					</div>
+					<form method="post" id="proveedor_form">
 
+					<!-- <input type="hidden" id="usu_id" name="usu_id" value="<?php echo $_SESSION["usu_id"] ?>"> -->
+
+						<div class="col-lg-6">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="prov_nom">Nombre:</label>
+								<input type="text" class="form-control" id="prov_nom" name="prov_nom" placeholder="Ingrese Titulo">
+							</fieldset>
+						</div>
+						<div class="col-lg-6">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="rfc">RFC:</label>
+								<input type="text" class="form-control" id="rfc" name="rfc" placeholder="Ingrese el RFC">
+							</fieldset>
+						</div> 
+						<div class="col-lg-12">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="prov_dom">Descripción del Servicio y/o Bien</label>
+								<div class="summernote-theme-1">
+									<textarea id="prov_dom" name="prov_dom" class="summernote"></textarea>
+								</div>
+							</fieldset>
+						</div>
+
+						
 					<div class="col-lg-12">
-					<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
+							<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
 						</div>
 					
-			
-						</div>
-			</form>
-		</div>
-		</div>
+					</form>
+				</div>
+
+			</div>
 		</div>
 	</div>
-	</div>
-</div>
 
 			<?php require_once("../MainJs/js.php");?>
 
-<script type="text/javascript" src="nuevoproveedor.js"></script>
-
-
-
+<script type="text/javascript" src="nproveedor.js"></script>
 </body>
 </html>
 
