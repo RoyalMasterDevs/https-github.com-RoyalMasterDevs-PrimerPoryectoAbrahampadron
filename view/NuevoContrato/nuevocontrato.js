@@ -48,6 +48,7 @@ $(document).ready(function() {
             processData: false,
             success: function(datos){
             $('#tick_titulo').val('');
+            $('#rfc').val('');
             $('#con_descrip').summernote('reset');
                 /* TODO: Alerta de Confirmacion */
 

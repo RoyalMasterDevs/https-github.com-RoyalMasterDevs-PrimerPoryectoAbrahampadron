@@ -26,15 +26,17 @@ $(document).ready(function() {
             ['height', ['height']]
         ]
 
-
-
-
+    }
         
         });
        
     $.post("../../controller/categoria.php?op=combo",function(data, status){
         $('#cat_id').html(data);
     });
+
+    $.post("../../controller/recurso.php?op=combo",function(data, status){
+            $('#rec_id').html(data);
+    
 });
 
 
@@ -55,5 +57,5 @@ $(document).ready(function() {
             }
             });
     }
-   
+
 init();

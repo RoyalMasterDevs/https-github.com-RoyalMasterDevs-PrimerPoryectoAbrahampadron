@@ -36,12 +36,13 @@ $(document).ready(function() {
         e.preventDefault();
         var formData = new FormData($("#proveedor_form")[0]);
         $.ajax({
-            url: "../../controller/Nproveedor.php?op=insert",
+            url: "../../controller/nproveedor.php?op=insert",
             type: "POST",
             data: formData,
             contentType: false,
             processData: false,
-            success: function(data){
+            success: function(datos){
+                console.log(datos);
                 $('#prov_nom').val('');
                 $('#prov_dom').summernote('reset');
            
@@ -49,5 +50,5 @@ $(document).ready(function() {
             }
             });
     }
-   
+
 init();

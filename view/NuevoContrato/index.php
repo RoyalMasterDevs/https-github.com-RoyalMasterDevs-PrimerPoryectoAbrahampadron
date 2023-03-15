@@ -63,16 +63,25 @@
 						<div class="col-lg-6">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="exampleInput">Tipo de Recurso:</label>
-								<select id="prov_id" name="prov_id" class="form-control">
+								<select id="rec_id" name="rec_id" class="form-control">
 	
 								</select>
 							</fieldset>
 						</div> 
 						
+					
+						<div class="col-lg-6">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="exampleInput">Tipo de Procedimiento:</label>
+								<select id="proc_id" name="proc_id" class="form-control">
+	
+								</select>
+							</fieldset>
+						</div> 
+  					
 
 
 						
-
 						<div class="col-lg-12">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="tick_descrip">Descripción del Servicio y/o Bien</label>
@@ -95,7 +104,8 @@
 	<?php require_once("../MainJs/js.php");?>
 
 	<script type="text/javascript" src="nuevoticket.js"></script>
-
+	<script type="text/javascript" src="recurso.js"></script>
+	<script type="text/javascript" src="procedimiento.js"></script>
 
 </body>
 </html>

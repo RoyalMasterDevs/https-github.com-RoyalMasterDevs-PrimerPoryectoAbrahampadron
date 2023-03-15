@@ -105,13 +105,14 @@
 		</div>
 	</div>
 	<!-- Contenido -->
-	<?php require_once("modalasignar.php");?>
+	
 
 	<?php require_once("../MainJs/js.php");?>
 
 	<script type="text/javascript" src="consultarticket.js"></script>
 
 	<script type="text/javascript" src="../notificacion.js"></script>
+	<script type="text/javascript" src="../nuevoticket.js"></script>
 
 </body>
 </html>
