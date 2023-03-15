@@ -25,10 +25,6 @@ $(document).ready(function() {
             ['para', ['ul', 'ol', 'paragraph']],
             ['height', ['height']]
         ]
-
-
-
-
         
         });
        
@@ -40,12 +36,12 @@ $(document).ready(function() {
         e.preventDefault();
         var formData = new FormData($("#proveedor_form")[0]);
         $.ajax({
-            url: "../../controller/nuevoproveedor.php?op=insert",
+            url: "../../controller/Nproveedor.php?op=insert",
             type: "POST",
             data: formData,
             contentType: false,
             processData: false,
-            success: function(datos){
+            success: function(data){
                 $('#prov_nom').val('');
                 $('#prov_dom').summernote('reset');
            
