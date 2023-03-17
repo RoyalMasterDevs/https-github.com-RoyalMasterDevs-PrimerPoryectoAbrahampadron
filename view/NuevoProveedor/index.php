@@ -55,7 +55,7 @@
 						</div> 
 						<div class="col-lg-12">
 							<fieldset class="form-group">
-								<label class="form-label semibold" for="prov_dom">Descripción del Servicio y/o Bien</label>
+								<label class="form-label semibold" for="prov_dom">Domicilio</label>
 								<div class="summernote-theme-1">
 									<textarea id="prov_dom" name="prov_dom" class="summernote"></textarea>
 								</div>

@@ -28,7 +28,6 @@ $(document).ready(function() {
         
         });
        
-    
 });
 
     function guardaryeditar(e){
@@ -41,11 +40,12 @@ $(document).ready(function() {
             contentType: false,
             processData: false,
             success: function(datos){
+                console.log(datos);
                 $('#con_num').val('');
                 $('#pro_id').val('');
+                $('#proc_id').val('');
                 $('#prov_id').val('');
                 $('#rec_id').val('');
-                $('#pro_id').val('');
                 $('#con_imp').val('');
                 $('#par_id').val('');
                 $('#con_ini').val('');

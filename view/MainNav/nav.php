@@ -25,6 +25,12 @@
 	                <span class="lbl">Consulta Contrato</span>
 	            </a>
 			</li>
+			<li class="blue-dirty">
+				<a href="..\Factura\">
+	            	<span class="font-icon font-icon-dashboard"></span>
+	                <span class="lbl">Factura</span>
+	            </a>
+			</li>
 
 	</ul>
 	</nav><!--.side-menu-->

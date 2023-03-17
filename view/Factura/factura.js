@@ -1,6 +1,6 @@
 
 function init(){
-    $("#proveedor_form").on("submit",function(e){
+    $("#factura_form").on("submit",function(e){
         guardaryeditar(e);
     });
 }
@@ -33,17 +33,17 @@ $(document).ready(function() {
 
     function guardaryeditar(e){
         e.preventDefault();
-        var formData = new FormData($("#proveedor_form")[0]);
+        var formData = new FormData($("#factura_form")[0]);
         $.ajax({
-            url: "../../controller/nproveedor.php?op=insert",
+            url: "../../controller/factura.php?op=insert",
             type: "POST",
             data: formData,
             contentType: false,
             processData: false,
             success: function(datos){
                 console.log(datos);
-                $('#prov_nom').val('');
-                $('#prov_dom').summernote('reset');
+                $('#factura_form').val('');
+                $('#').summernote('reset');
            
                 swal("Correcto!", "Registrado Correctamente", "success");
             }
