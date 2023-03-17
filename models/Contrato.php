@@ -1,23 +1,23 @@
 <?php
-    class  Contrato extends Conectar{
+    class Contrato extends Conectar{
 
-        public function insert_contrato($usu_id,$prov_id,$con_numero,$con_descrip){ /* funcion Contato*/
-            $conectar= parent::conexion(); /* funcion se prepara la conexion*/
-            parent::set_names(); /* funcion se prepara la conexion*/
-            $sql="INSERT INTO tb_contrato (con_ id,usu_id, con_numero, prov_id, con_descrip, est) VALUES (NULL,?,?,?,?,'1');";
-            
-            
-            /* Sentencia SQL*/
-            $sql=$conectar->prepare($sql); /* Se prepara la conexión*/
-            $sql->bindValue(1, $usu_id);
-            $sql->bindValue(2, $prov_id);
-            $sql->bindValue(3, $con_numero);
-            $sql->bindValue(4, $con_descrip);
-            $sql->execute(); /* Se ejecuta el SQL*/
-            return $resultado=$sql->fetchAll(); /* Se muestra el resultado o se retorana*/
-    }
-}
+        public function insert_contrato($pro_id,$con_num,$prov_id,$rec_id,$con_imp,$con_des,$par_id,$con_ini,$con_fin){
+            $conectar= parent::conexion();
+            parent::set_names();
+            $sql="INSERT INTO tm_contrato (con_id, pro_id, con_num, prov_id, rec_id, con_imp, con_des, par_id, con_ini, con_fin, est) VALUES (NULL,?,?,?,?,?,?,?,?,?,'1');";
+            $sql=$conectar->prepare($sql);
+            $sql->bindValue(1, $pro_id);
+            $sql->bindValue(2, $con_num);
+            $sql->bindValue(3, $prov_id);
+            $sql->bindValue(4, $rec_id);
+            $sql->bindValue(5, $con_imp);
+            $sql->bindValue(6, $con_des);
+            $sql->bindValue(7, $par_id);
+            $sql->bindValue(8, $con_ini);
+            $sql->bindValue(9, $con_fin);
+            $sql->execute();
+            return $resultado=$sql->fetchAll();
+        }
 
-
-
+ }
 ?>

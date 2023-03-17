@@ -41,70 +41,86 @@
 				<h5 class="m-t-lg with-border">Ingresar Información</h5>
 
 				<div class="row">
-					<form method="post" id="ticket_form">
-
-						<input type="hidden" id="usu_id" name="usu_id" value="<?php echo $_SESSION["usu_id"] ?>">
+					<form method="post" id="contrato_form">
 
 						<div class="col-lg-6">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="tick_titulo">Numero de Contrato:</label>
-								<input type="text" class="form-control" id="tick_titulo" name="tick_titulo" placeholder="Ingrese Titulo">
+								<input type="text" class="form-control" id="con_num" name="con_num" placeholder="Ingrese Titulo">
 							</fieldset>
 						</div>
 						
 						<div class="col-lg-6">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="exampleInput">Proveedor:</label>
-								<select id="cat_id" name="cat_id" class="form-control">
+								<select id="prov_id" name="prov_id" class="form-control">
 
 								</select>
 							</fieldset>
 						</div>
-						<div class="col-lg-6">
+						<div class="col-lg-4">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="exampleInput">Tipo de Recurso:</label>
-								<select id="rec_id" name="rec_id" class="form-control">
-	
-								</select>
+								<select id="rec_id" name="rec_id" class="form-control"></select>
 							</fieldset>
 						</div> 
-						
 					
-						<div class="col-lg-6">
+						<div class="col-lg-4">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="exampleInput">Tipo de Procedimiento:</label>
-								<select id="proc_id" name="proc_id" class="form-control">
-	
-								</select>
+								<select id="proc_id" name="proc_id" class="form-control"></select>
 							</fieldset>
 						</div> 
-  					
 
-
-						
-						<div class="col-lg-12">
+						<div class="col-lg-4">
 							<fieldset class="form-group">
-								<label class="form-label semibold" for="tick_descrip">Descripción del Servicio y/o Bien</label>
-								<div class="summernote-theme-1">
-									<textarea id="tick_descrip" name="tick_descrip" class="summernote" name="name"></textarea>
-								</div>
+								<label class="form-label semibold" for="exampleInput">Partida Presupuestal:</label>
+								<select id="par_id" name="par_id" class="form-control"></select>
+							</fieldset>
+						</div> 
+				
+						<div class="col-lg-4">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="tick_titulo">Importe:</label>
+								<input type="number" class="form-control" id="con_imp" name="con_imp" placeholder="Ingrese Titulo">
 							</fieldset>
 						</div>
+					<div class="col-lg-4">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="tick_titulo">Fecha de Inicio:</label>
+								<input type="date" class="form-control" id="con_ini" name="con_ini" placeholder="Ingrese Titulo">
+							</fieldset>
+						</div>
+
+						<div class="col-lg-4">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="tick_titulo">Fecha de Fin:</label>
+								<input type="date" class="form-control" id="con_fin" name="con_fin" placeholder="Ingrese Titulo">
+							</fieldset>
+						</div>
+
+						<div class="col-lg-12">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="prov_dom">Descripción del Servicio y/o Bien</label>
+								<div class="summernote-theme-1">
+									<textarea id="con_des" name="con_des" class="summernote"></textarea>
+							
+							</fieldset>
+							</div>
 						<div class="col-lg-12">
 							<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
 						</div>
 					</form>
 				</div>
 
-			</div>
-		</div>
-	</div>
 	<!-- Contenido -->
 
 	<?php require_once("../MainJs/js.php");?>
 
-	<script type="text/javascript" src="nuevoticket.js"></script>
+	<script type="text/javascript" src="contrato.js"></script> 
+	<script type="text/javascript" src="proveedor.js"></script>
 	<script type="text/javascript" src="recurso.js"></script>
+	<script type="text/javascript" src="partida.js"></script>
 	<script type="text/javascript" src="procedimiento.js"></script>
 
 </body>

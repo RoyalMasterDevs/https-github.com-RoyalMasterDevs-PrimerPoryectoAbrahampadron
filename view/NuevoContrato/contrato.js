@@ -2,17 +2,13 @@
 function init(){
     $("#contrato_form").on("submit",function(e){
         guardaryeditar(e);
-    
-    
     });
-
 }
 
 $(document).ready(function() {
-      $("#con_descrip").summernote({
+    $('#con_des').summernote({
         height: 150,
-        lang: "es-ES",
-        popover: {
+ popover: {
             onImageUpload: function(image) {
                 console.log("Image detect...");
                 myimagetreat(image[0]);
@@ -29,33 +25,39 @@ $(document).ready(function() {
             ['para', ['ul', 'ol', 'paragraph']],
             ['height', ['height']]
         ]
-    });
-
-
-    $.post("../../controller/proveedor.php?op=combo",function(data, status){
-        $("#prov_id").html(data);
-    });
+        
+        });
+       
+    
 });
 
     function guardaryeditar(e){
         e.preventDefault();
         var formData = new FormData($("#contrato_form")[0]);
         $.ajax({
-            url: "/../controller/Nuevoproveedor.php?op=insert",
+            url: "../../controller/contrato.php?op=insert",
             type: "POST",
             data: formData,
             contentType: false,
             processData: false,
             success: function(datos){
-            $('#tick_titulo').val('');
-            $('#rfc').val('');
-            $('#con_descrip').summernote('reset');
-                /* TODO: Alerta de Confirmacion */
+                $('#con_num').val('');
+                $('#pro_id').val('');
+                $('#prov_id').val('');
+                $('#rec_id').val('');
+                $('#pro_id').val('');
+                $('#con_imp').val('');
+                $('#par_id').val('');
+                $('#con_ini').val('');
+                $('#con_ini').val('');
+                $('#con_fin').val('');
 
-            swal("Correcto!", "Registrado Correctamente", "success");
+                $('#con_des').summernote('reset');
+           
+                swal("Correcto!", "Registrado Correctamente", "success");
             }
-            
             });
-}
+    }
 
 init();
+
