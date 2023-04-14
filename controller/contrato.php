@@ -17,7 +17,7 @@ switch ($_GET["op"]) {
             $sub_array[] = $row["con_num"];
             $sub_array[] = $row["prov_id"];
             $sub_array[] = strtoupper($row["con_des"]);
-            $sub_array[] = number_format( $row["con_imp"],2);
+            $sub_array[] ='$'.number_format( $row["con_imp"], 2);
             $sub_array[] = '<button type="button" onClick="ver('.$row["con_id"].');" id="'.$row["con_id"].'" class="btn btn-inline btn-primary btn-sm ladda-button"><i class="fa fa-eye"></i></button>';
             $data[] = $sub_array;
         }
@@ -30,8 +30,30 @@ switch ($_GET["op"]) {
         echo json_encode($results);
 
         break;
+        case "contratodetalle":
+        $datos=$contrato->contratodetalle();
+        ?>
+             <?php
+            foreach(datos as $row){
+                ?>
+                 	<div class="box-typical box-typical-padding">
+			<h5 class="m-t-lg with-border">Contrato Número
+			<div>Vigencia</div>
+			</h5>
+				
+            <?php
+                }
+              
+           
+                ?>
 
-    }
+     
+            <?php
+        break; 
+
+
+            
+          }
 
 
 ?>

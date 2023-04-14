@@ -1,11 +1,13 @@
 
 function init(){
-    var id = getUrlParameter('ID');
+   
 }
 
 $(document).ready( function (){
-
-
+    var con_id = getUrlParameter('ID');
+    $.post("../../controller/contrato.php?op=contratodetalle", { con_id :  con_id }, function (data) {
+        console,log(data);
+    });
 
     var getUrlParameter = function getUrlParameter(sParam) {
         var sPageURL = decodeURIComponent(window.location.search.substring(1)),

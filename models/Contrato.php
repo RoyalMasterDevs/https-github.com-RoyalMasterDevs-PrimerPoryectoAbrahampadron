@@ -46,6 +46,6 @@ class Contrato extends Conectar{
             return $resultado=$sql->fetchAll();
         }
 
-
+       
 }
 ?>

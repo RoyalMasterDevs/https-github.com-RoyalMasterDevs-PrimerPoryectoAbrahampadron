@@ -2,7 +2,7 @@
     <div class="container-fluid">
 
         <a href="Home" class="site-logo">
-           <h2>INBAL</h2>
+           <h2>Empresa X</h2>
         </a>
 
         <button id="show-hide-sidebar-toggle" class="show-hide-sidebar">
