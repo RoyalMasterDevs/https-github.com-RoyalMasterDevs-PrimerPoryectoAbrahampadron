@@ -103,6 +103,7 @@
 
 	<?php require_once("../MainJs/js.php");?>
 	<script type="text/javascript" src="consultacontrato.js"></script>
+
 	
 
 </body>

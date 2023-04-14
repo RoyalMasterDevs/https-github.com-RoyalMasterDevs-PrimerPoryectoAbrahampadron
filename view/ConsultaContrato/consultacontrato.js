@@ -61,7 +61,7 @@ $(document).ready( function (){
 });
 
 function ver(con_id){
-    console.log(con_id);
+      window.open('http://localhost:8080/services/view/Factura/?ID='+con_id+'');
 }
 
 init();

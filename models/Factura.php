@@ -29,6 +29,16 @@
                 $sql->execute();
                 return $resultado=$sql->fetchAll();
             }
+
+            public function sumafactura(){
+                $conectar= parent::conexion();
+                    parent::set_names();
+                    $sql="SELECT sum(factura.fac_imp) FROM factura where factura.fac_id =1";
+                    $sql=$conectar->prepare($sql);
+                    $sql->execute();
+                    return $resultado=$sql->fetchAll();
+                }
+
     }
 ?>
 

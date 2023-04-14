@@ -13,7 +13,7 @@ switch ($_GET["op"]) {
         $data= Array();
         foreach($datos as $row){
             $sub_array = array();
-            $sub_array[] = $row["con_id"];
+            $sub_array[] = $row['con_id'];
             $sub_array[] = $row["con_num"];
             $sub_array[] = $row["prov_id"];
             $sub_array[] = strtoupper($row["con_des"]);

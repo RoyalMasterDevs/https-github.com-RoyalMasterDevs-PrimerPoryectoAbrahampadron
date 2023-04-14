@@ -34,6 +34,18 @@ class Contrato extends Conectar{
         $sql->execute();
         return $resultado=$sql->fetchAll();
     }
+    public function contratodetalle(){
+        $conectar= parent::conexion();
+            parent::set_names();
+            $sql="SELECT tm_contrato.con_num
+                  FROM
+                        tm_contrato
+                        WHERE con_id=?";
+            $sql=$conectar->prepare($sql);
+            $sql->execute();
+            return $resultado=$sql->fetchAll();
+        }
+
 
 }
 ?>

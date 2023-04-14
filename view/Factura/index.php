@@ -14,7 +14,25 @@
     <div class="mobile-menu-left-overlay"></div>
 
     <?php require_once("../MainNav/nav.php");?>
-
+     <style>
+ 				#encabezado {
+					 text-align: center;
+					 width: 30%;
+					 padding: 50px;
+				}
+				#Concepto{
+					 text-align: center;
+					 width: 30%;
+					 padding: 20px;
+				}
+				#proveedor{
+					 text-align: center;
+					 width: 30%;
+					 padding: 20px;
+				}
+				
+				
+	 </style>
 	<!-- Contenido -->
 	<div class="page-content">
 		<div class="container-fluid">
@@ -34,28 +52,43 @@
 			</header>
 
 			<div class="box-typical box-typical-padding">
+			<h5 class="m-t-lg with-border">Contrato Número
+			<div>Vigencia</div>
+			</h5>
+					
 			</form>
 			<div class="box-typical box-typical-padding" id="table">
-					<table id="data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
+			<table id="data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
 						<thead>
-							<tr>
-								<th style="width: 5%; text-align: center">No.</th>
-								<th style="width: 10%;">Número de Factura</th>
-								<th class="d-none d-sm-table-cell" style="width: 15%;">Importe</th>
-								<th class="d-none d-sm-table-cell" style="width: 20%;">Oficio</th>
-								<th class="d-none d-sm-table-cell" style="width: 10%; text-align: center">Fecha</th>
-								<th class="d-none d-sm-table-cell" style="width: 10%; text-align: center">Periodo</th>
-							</tr>
-						</thead>
-						<tbody>
+								
+						<tr>
 
+						<th rowspan ="3" id="encabezado">Importes</th>
+
+						<td>Importe Adjudicado</td><td>$15,000.00</td>
+						</tr>	
+						<tr>
+						<td>Importe Facturado</td><td>$1,5000.00</td>
+						</tr>
+						<tr>
+						<td>Importe por Factura</td><td>$13,000.00</td>
+						</tr>
+						<tr>
+						<th id="proveedor">Proveedor</th></td><td>Nombre del Proveeor<br>
+							rfc
+						</td>
+					
+						<tr>
+						<th id="Concepto">Concepto</th><td>Concepto</td>
+						</tr>
+				
+						</thead>	
+						</tr>	
 						</tbody>
 					</table>
 				</div>
-
-
-
-			<h5 class="m-t-lg with-border">Contrato Número</h5>
+			<h5 class="m-t-lg with-border">Factura</h5>
+					
 			
 			<form method="post" id="factura_form" >
 					<div class="row">
