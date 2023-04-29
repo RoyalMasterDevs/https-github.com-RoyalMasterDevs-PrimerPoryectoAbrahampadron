@@ -8,11 +8,8 @@
 	<title>Plataforma de Pagos y Servicio</title>
 </head>
 <body class="with-side-menu">
-
     <?php require_once("../MainHeader/header.php");?>
-
     <div class="mobile-menu-left-overlay"></div>
-
     <?php require_once("../MainNav/nav.php");?>
      <style>
  				#encabezado {
@@ -42,9 +39,12 @@
 						<div class="tbl-cell">
 							<h3>Factura</h3>
 							<ol class="breadcrumb breadcrumb-simple">
-								<li><a href="#"></a></li>
-								<li><a href="#">Forms</a></li>
-								<li class="active">Basic Inputs</li>
+								<li><a href="#">Incio</a></li>
+								<li><a href="../Suficiencia/index.php">Suficiencia</a></li>
+								<li><a href="../NuevoContrato/index.php">Contrato</a></li>
+								<li><a href="../Nuevoproveedor/index.php">Proveedor</a></li>
+								<li><a href="../ConsultaContrato/index.php">Consuta Contrator</a></li>
+								<li><a href="../Factura/index.php">Factura</a></li>
 							</ol>
 						</div>
 					</div>
@@ -58,7 +58,7 @@
 					
 			</form>
 			<div class="box-typical box-typical-padding" id="table">
-			<table id="data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
+			<table id="data" class="table table-bordered table-striped table-vcenter js-dataTable-full hover">
 						<thead>
 								
 						<tr>
@@ -74,7 +74,7 @@
 						<td>Importe por Factura</td><td>$13,000.00</td>
 						</tr>
 						<tr>
-						<th id="proveedor">Proveedor</th></td><td>Nombre del Proveeor<br>
+						<th id="proveedor">Proveedor</th></td><td>Nombre del Proveesor<br>
 							rfc
 						</td>
 					
@@ -92,20 +92,20 @@
 			
 			<form method="post" id="factura_form" >
 					<div class="row">
-						<div class="col-lg-4">
+						<div class="col-md-4 col-sm-4">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="exampleInput">Numero de Factura</label>
 								<input type="text" class="form-control" id="fac_num" name="fac_num" placeholder="No. de Factura">
 							
 							</fieldset>
 						</div>
-						<div class="col-lg-4">
+						<div class="col-md-4 col-sm-4">
 							<fieldset class="form-group">
 							<label class="form-label semibold" for="exampleInput">Importe</label>
-								<input type="number" class="form-control" id="fac_imp" name="fac_imp" placeholder="Importe">
+								<input type="number" class="form-control" id="fac_imp" name="fac_imp" min="1" max="20000000" encabezadoplaceholder="Importe">
 							</fieldset>
 						</div>
-						<div class="col-lg-4">
+						<div class="col-md-4 col-sm-4">
 							<fieldset class="form-group">
 							<label class="form-label semibold" for="exampleInput">Oficio</label>
 							<input type="text" class="form-control" id="fac_ofi" name="fac_ofi" placeholder="No. de Oficio">
@@ -114,7 +114,7 @@
 					</div><!--.row-->
 
 					<div class="row">
-						<div class="col-md-4 col-sm-6">
+						<div class="col-md-4 col-sm-4">
 							<fieldset class="form-group">
 							<label class="form-label semibold" for="exampleInput">Fecha</label>
 							<input type="date" class="form-control" id="fac_fec" name="fac_fec" placeholder="Fecha">
@@ -142,7 +142,7 @@
 					<br><br>
 					
 				<div class="box-typical box-typical-padding" id="table">
-					<table id="data1" class="table table-bordered table-striped table-vcenter js-dataTable-full">
+					<table id="data1" class="table table-bordered table-striped table-vcenter js-dataTable-full hover">
 						<thead>
 							<tr>
 								<th style="width: 5%; text-align: center">No.</th>

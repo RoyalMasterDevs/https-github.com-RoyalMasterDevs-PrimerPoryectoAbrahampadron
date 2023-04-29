@@ -1,0 +1,53 @@
+21101	Materiales y útiles de oficina
+21301	Material estadístico y geográfico
+21601	Material de limpieza
+24601	Material eléctrico y electrónico
+24801	Materiales complementarios
+24901	Otros materiales y artículos de construcción y reparación
+25201	Fertilizantes, pesticidas y otros agroquímicos
+25401	Materiales, accesorios y suministros médicos
+26103	Combustibles, lubricantes y aditivos para vehículos terrestres
+27201	Prendas de protección personal
+29101	Herramientas menores
+29201	Refacciones y accesorios menores de edificios
+29801	Refacciones y accesorios menores de maquinaria y otros equipos
+31101	Servicio de energía eléctrica
+31301	Servicio de agua
+31801	Servicio postal
+31902	Contratación de otros servicios
+32201	Arrendamiento de edificios y locales
+32302	Arrendamiento de mobiliario
+32503	Arrendamiento de vehículos terrestres
+33605	Información en medios masivos derivada de la operación y administración de las dependencias y entidades
+33801	Servicios de vigilancia
+33901	Subcontratación de servicios con terceros
+33903	Servicios integrales
+34101	Servicios bancarios y financieros
+34501	Seguros de bienes patrimoniales
+34701	Fletes y maniobras
+35101	Mantenimiento y conservación de inmuebles para la prestación de servicios administrativos
+35102	Mantenimiento y conservación de inmuebles para la prestación de servicios públicos
+35201	Mantenimiento y conservación de mobiliario y equipo de administración
+35501	Mantenimiento y conservación de vehículos terrestres, aéreos, marítimos, lacustres y fluviales
+35701	Mantenimiento y conservación de maquinaria y equipo
+35801	Servicios de lavandería, limpieza e higiene
+35901	Servicios de jardinería y fumigación
+37104	Pasajes aéreos nacionales para servidores públicos de mando en el desempeño de comisiones y funciones oficiales
+37201	Pasajes terrestres nacionales para labores en campo y de supervisión
+37504	Viáticos nacionales para servidores públicos en el desempeño de funciones oficiales
+39202	Otros impuestos y derechos
+51101	Mobiliario
+51301	Bienes artísticos y culturales
+51501	Bienes informáticos
+51901	Equipo de administración
+52101	Equipos y aparatos audiovisuales
+52301	Cámaras fotográficas y de video
+52901	Otro mobiliario y equipo educacional y recreativo
+53101	Equipo médico y de laboratorio
+56201	Maquinaria y equipo industrial
+56501	Equipos y aparatos de comunicaciones y telecomunicaciones
+56601	Maquinaria y equipo eléctrico y electrónico
+56701	Herramientas y máquinas herramienta
+56902	Otros bienes muebles
+62202	Mantenimiento y rehabilitación de edificaciones no habitacionales
+62903	Servicios de supervisión de obras

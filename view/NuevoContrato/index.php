@@ -25,8 +25,12 @@
 						<div class="tbl-cell">
 							<h3>Nuevo Contrato</h3>
 							<ol class="breadcrumb breadcrumb-simple">
-								<li><a href="#">Home</a></li>
-								<li class="active">Nuevo Contrato</li>
+							<li><a href="../Home">Incio</a></li>
+								<li><a href="../Suficiencia/index.php">Suficiencia</a></li>
+								<li><a href="../NuevoContrato/index.php">Contrato</a></li>
+								<li><a href="../Nuevoproveedor/index.php">Proveedor</a></li>
+								<li><a href="../ConsultaContrato/index.php">Consuta Contrator</a></li>
+								<li><a href="../Factura/index.php">Factura</a></li>
 							</ol>
 						</div>
 					</div>
@@ -45,7 +49,7 @@
 
 						<div class="col-lg-6">
 							<fieldset class="form-group">
-								<label class="form-label semibold" for="tick_titulo">Numero de Contrato:</label>
+								<label class="form-label semibold" for="contrato">Numero de Contrato:</label>
 								<input type="text" class="form-control" id="con_num" name="con_num" placeholder="Numero de Contrato">
 							</fieldset>
 						</div>
@@ -82,7 +86,7 @@
 						<div class="col-lg-4">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="tick_titulo">Importe:</label>
-								<input type="number" class="form-control" id="con_imp" name="con_imp" placeholder="Importe del contrato">
+								<input type="number" class="form-control" id="con_imp" name="con_imp" min="1" max="2000000" placeholder="Importe del contrato">
 							</fieldset>
 						</div>
 					<div class="col-lg-4">

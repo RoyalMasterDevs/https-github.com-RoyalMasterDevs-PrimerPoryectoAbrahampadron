@@ -27,3 +27,6 @@
 <link rel="stylesheet" href="../../public/css/separate/vendor/select2.min.css">
 
 <link rel="stylesheet" href="../../public/css/main.css">
+<link href="https://cdn.datatables.net/v/dt/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
+ 
+
