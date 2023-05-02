@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
     <?php require_once("../MainHead/head.php");?>
-	<title>Consultar Conntrato</title>
+	<title>Consultar Contrato</title>
 </head>
 <body class="with-side-menu">
 
@@ -32,20 +32,19 @@
 					</div>
 				</div>
 			</header>
-
 			<div class="box-typical box-typical-padding">
 				
 				<div class="row" id="viewuser">
 					<div class="col-lg-3">
 						<fieldset class="form-group">
-							<label class="form-label" for="tick_titulo">No. Contrato</label>
+							<label class="form-label" for="tick_titulo">Titulo</label>
 							<input type="text" class="form-control" id="tick_titulo" name="tick_titulo" placeholder="Ingrese Titulo" required>
 						</fieldset>
 					</div>
 
 					<div class="col-lg-3">
 						<fieldset class="form-group">
-							<label class="form-label" for="cat_id">Proveedor</label>
+							<label class="form-label" for="cat_id">Categoria</label>
 							<select class="select2" id="cat_id" name="cat_id" data-placeholder="Seleccionar">
 								<option label="Seleccionar"></option>
 
@@ -55,7 +54,7 @@
 
 					<div class="col-lg-2">
 						<fieldset class="form-group">
-							<label class="form-label" for="prio_id">Tipo de Recruso</label>
+							<label class="form-label" for="prio_id">Prioridad</label>
 							<select class="select2" id="prio_id" name="prio_id" data-placeholder="Seleccionar">
 								<option label="Seleccionar"></option>
 
@@ -79,19 +78,16 @@
 				</div>
 
 				<div class="box-typical box-typical-padding" id="table">
-					<table id="ticket_data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
+					<table id="data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
 						<thead>
 							<tr>
-								<th style="width: 5%;">No.Contrato</th>
-								<th style="width: 15%;">Proveedor</th>
-								<th class="d-none d-sm-table-cell" style="width: 30%;">Concepto</th>
-								<th class="d-none d-sm-table-cell" style="width: 5%;">Adjudicado</th>
-								<th class="d-none d-sm-table-cell" style="width: 5%;">Procedimiento</th>
-								<th class="d-none d-sm-table-cell" style="width: 10%;">Requisición</th>
-								<th class="d-none d-sm-table-cell" style="width: 10%;">Fecha Inicio</th>
-								<th class="d-none d-sm-table-cell" style="width: 10%;">Fecha Fin</th>
-								<th class="d-none d-sm-table-cell" style="width: 10%;">Archivo</th>
-								<th class="text-center" style="width: 5%;"></th>
+								<th style="width: 5%; text-align: center">No.</th>
+								<th style="width: 15%;">Número de Contrato</th>
+								<th class="d-none d-sm-table-cell" style="width: 15%;">Nombre del Proveedor</th>
+								<th class="d-none d-sm-table-cell" style="width: 30%;">Descripción del Bien y/o Servicio</th>
+								<th class="d-none d-sm-table-cell" style="width: 5%; text-align: center">Importe</th>
+								<th class="d-none d-sm-table-cell" style="width: 5%; text-align: center">ver</th>
+								
 							</tr>
 						</thead>
 						<tbody>
@@ -104,15 +100,11 @@
 
 		</div>
 	</div>
-	<!-- Contenido -->
-	
 
 	<?php require_once("../MainJs/js.php");?>
+	<script type="text/javascript" src="consultacontrato.js"></script>
 
-	<script type="text/javascript" src="consultarticket.js"></script>
-
-	<script type="text/javascript" src="../notificacion.js"></script>
-	<script type="text/javascript" src="../nuevoticket.js"></script>
+	
 
 </body>
 </html>

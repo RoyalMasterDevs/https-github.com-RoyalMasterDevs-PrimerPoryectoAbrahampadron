@@ -46,7 +46,7 @@
 						<div class="col-lg-6">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="tick_titulo">Numero de Contrato:</label>
-								<input type="text" class="form-control" id="con_num" name="con_num" placeholder="Ingrese Titulo">
+								<input type="text" class="form-control" id="con_num" name="con_num" placeholder="Numero de Contrato">
 							</fieldset>
 						</div>
 						
@@ -82,7 +82,7 @@
 						<div class="col-lg-4">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="tick_titulo">Importe:</label>
-								<input type="number" class="form-control" id="con_imp" name="con_imp" placeholder="Ingrese Titulo">
+								<input type="number" class="form-control" id="con_imp" name="con_imp" placeholder="Importe del contrato">
 							</fieldset>
 						</div>
 					<div class="col-lg-4">

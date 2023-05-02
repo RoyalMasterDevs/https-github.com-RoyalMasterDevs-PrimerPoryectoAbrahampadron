@@ -44,7 +44,7 @@
 						<div class="col-lg-6">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="prov_nom">Nombre:</label>
-								<input type="text" class="form-control" id="prov_nom" name="prov_nom" placeholder="Ingrese Titulo">
+								<input type="text" class="form-control" id="prov_nom" name="prov_nom" placeholder="Nombre y/o Razón Social">
 							</fieldset>
 						</div>
 						<div class="col-lg-6">
