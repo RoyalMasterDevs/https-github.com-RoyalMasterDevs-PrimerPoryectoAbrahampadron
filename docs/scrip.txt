@@ -1,0 +1,3 @@
+SELECT COUNT(proc_id) FROM tm_contrato where  proc_id = 1;
+SELECT COUNT(proc_id) FROM tm_contrato where  proc_id = 2;
+SELECT COUNT(proc_id) FROM tm_contrato where  proc_id = 3;

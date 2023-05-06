@@ -39,45 +39,45 @@
 						<div class="col-lg-4">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="exampleInput">No. de Oficio:</label>
-								<input type="text" class="form-control" id="suf_num" name="suf_num" placeholder="No. de Suficiencia">
+								<input type="text" class="form-control" id="suf_num" name="suf_num" placeholder="No. de Suficiencia" required>
 							</fieldset>
 						</div>
 						<div class="col-md-4 col-sm-4">
 							<fieldset class="form-group">
 							<label class="form-label semibold" for="exampleInput">Fecha:</label>
-							<input type="date" class="form-control" id="suf_fec" name="suf_fec">
+							<input type="date" class="form-control" id="suf_fec" name="suf_fec" required>
 							</fieldset>
 						</div>
 						<div class="col-lg-4">
-							<fieldset class="form-group">
+							<fieldset class="form-group"> 
 							<label class="form-label semibold" for="exampleInput">Importe:</label>
-								<input type="number" class="form-control" id="suf_imp" name="suf_imp" min="1" mx="2000000000.00" placeholder="Importe Max">
+								<input type="number" class="form-control" id="suf_imp" name="suf_imp" step="0.01" min="1"  mx="2000000000.50" placeholder="Importe Max" required>
 							</fieldset>
 						</div>
 						<div class="col-lg-12">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="suf_des">Justificación:</label>
 								<div class="summernote-theme-1">
-									<textarea id="suf_des" name="suf_des" class="summernote"></textarea>
+									<textarea id="suf_des" name="suf_des" class="summernote" required></textarea>
 							</fieldset>
 							</div>
 						<div class="col-lg-4">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="exampleInput">Partida Presupuestal:</label>
-								<select id="par_id" name="par_id" class="form-control"></select>
+								<select id="par_id" name="par_id" class="form-control" required></select>
 							</fieldset>
   						</div>
 						  <div class="col-lg-4">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="exampleInput">Solicitud</label>
-								<input type="file" name="fileElem" id="fileElem" class="form-control" multiple>
+								<input type="file" name="fileElem" id="fileElem" class="form-control"required multiple>
 							</fieldset>
 						</div>
 						
 						<div class="col-lg-4">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="exampleInput">Autorización</label>
-								<input type="file" name="fileElem" id="fileElem" class="form-control" multiple>
+								<input type="file" name="fileElem" id="fileElem" class="form-control"required multiple>
 							</fieldset>
 						</div>		
 

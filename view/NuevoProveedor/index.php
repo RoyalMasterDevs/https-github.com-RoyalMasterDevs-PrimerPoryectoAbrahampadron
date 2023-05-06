@@ -48,7 +48,7 @@
 						<div class="col-lg-6">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="prov_nom">Nombre:</label>
-								<input type="text" class="form-control" id="prov_nom" name="prov_nom" placeholder="Nombre y/o Razón Social">
+								<input type="text" class="form-control" id="prov_nom" name="prov_nom" placeholder="Nombre y/o Razón Social" required>
 							</fieldset>
 						</div>
 						<div class="col-lg-6">
@@ -61,7 +61,7 @@
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="prov_dom">Domicilio</label>
 								<div class="summernote-theme-1">
-									<textarea id="prov_dom" name="prov_dom" class="summernote"></textarea>
+									<textarea id="prov_dom" name="prov_dom" class="summernote" required></textarea>
 								</div>
 							</fieldset>
 						</div>

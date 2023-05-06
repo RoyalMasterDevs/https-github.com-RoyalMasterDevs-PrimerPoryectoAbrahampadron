@@ -13,13 +13,14 @@
                 $data= Array();
                 foreach($datos as $row){
                     $sub_array = array();
-                    $sub_array[] = $row["suf_id"];
-                    $sub_array[] = $row["suf_num"];
+                    $sub_array[] = '<center>'.$row["suf_id"].'</center>';
+                    $sub_array[] = '<center>'.$row["suf_num"].'</center>';
                     $sub_array[] = strtoupper($row["suf_des"]);
-                    $sub_array[] =  '$'.number_format( $row["suf_imp"],2);
-                    $sub_array[] = $row["par_id"];
-                    $sub_array[] = $row["suf_fec"];
-              
+                    $sub_array[] =  '<center>'.'$'.number_format( $row["suf_imp"],2).'</center>';
+                    $sub_array[] = '<center>'.$row["par_id"].'</center>';
+                    $sub_array[] =  '<center>'.date("d/m/Y", strtotime($row["suf_fec"])).'</center>';
+                
+                    
                  $data[] = $sub_array;
                 }
                 $results = array(

@@ -34,11 +34,11 @@ switch ($_GET["op"]) {
         $data= Array();
         foreach($datos as $row){
             $sub_array = array();
-            $sub_array[] = $row["con_id"];
-            $sub_array[] = $row["con_num"];
-           $sub_array[] =  $row["prov_id"];
+            $sub_array[] = '<center>'.$row["con_id"].'</center>';
+            $sub_array[] = '<center>'.$row["con_num"].'</center>';
+           $sub_array[] =  $row["prov_id"];          ;
             $sub_array[] = strtoupper($row["con_des"]);
-            $sub_array[] = '$'.number_format( $row["con_imp"],2);
+            $sub_array[] = '<center>'.'$'.number_format( $row["con_imp"],2).'</center>';
             $sub_array[] = $row["con_doc"];
             $sub_array[] = '<button type="button" onClick="ver('.$row["con_id"].');" id="'.$row["con_id"].'" class="btn btn-inline btn-primary btn-sm ladda-button"><i class="fa fa-eye"></i></button>';
             $data[] = $sub_array;

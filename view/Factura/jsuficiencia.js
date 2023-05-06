@@ -44,7 +44,10 @@ $(document).ready(function() {
                 console.log(datos);
                 $('#suficiencia_form').val('');
                 $('#').summernote('reset');
-           
+                $('#suf_fec').val('');
+                $('#suf_imp').val('');
+                $('#suf_des').val('');
+                $('#par_id').val('');
                 swal("Correcto!", "Registrado Correctamente", "success");
             }
             });

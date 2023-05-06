@@ -39,9 +39,9 @@ if (isset($_SESSION["usu_id"])) {
 				</header>
 
 				<div class="box-typical box-typical-padding">
-					<center><p>
+					<p>
 						Desde esta ventana podra registrar nuevos Contratos.
-					</p></center>
+					</p>
 
 					<h5 class="m-t-lg with-border">Ingresar Información</h5>
 
@@ -51,41 +51,41 @@ if (isset($_SESSION["usu_id"])) {
 							<div class="col-md-4 col-sm-6">
 								<fieldset class="form-group">
 									<label class="form-label semibold" for="contrato">Numero de Contrato:</label>
-									<input type="text" class="form-control" id="con_num" name="con_num"
+									<input type="text" class="form-control" id="con_num" name="con_num" required
 										placeholder="Numero de Contrato">
 								</fieldset>
 							</div>
 							<div class="col-md-4 col-sm-6">
 								<fieldset class="form-group">
 									<label class="form-label semibold" for="exampleInput">Proveedor:</label>
-									<select id="prov_id" name="prov_id" class="form-control"></select>
+									<select id="prov_id" name="prov_id" class="form-control" required></select>
 								</fieldset>
 							</div>
 							<div class="col-md-4 col-sm-6">
 								<fieldset class="form-group">
 									<label class="form-label semibold" for="exampleInput">Tipo de Recurso:</label>
-									<select id="rec_id" name="rec_id" class="form-control"></select>
+									<select id="rec_id" name="rec_id" class="form-control"required></select>
 								</fieldset>
 							</div>
 
 							<div class="col-md-4 col-sm-6">
 								<fieldset class="form-group">
 									<label class="form-label semibold" for="exampleInput">Tipo de Procedimiento:</label>
-									<select id="proc_id" name="proc_id" class="form-control"></select>
+									<select id="proc_id" name="proc_id" class="form-control"required></select>
 								</fieldset>
 							</div>
 							<div class="col-md-4 col-sm-6">
 								<fieldset class="form-group">
 									<label class="form-label semibold" for="exampleInput">Partida Presupuestal:</label>
-									<select id="par_id" name="par_id" class="form-control"></select>
+									<select id="par_id" name="par_id" class="form-control"required></select>
 								</fieldset>
 							</div>
 
 							<div class="col-md-4 col-sm-6">
 								<fieldset class="form-group">
 									<label class="form-label semibold" for="tick_titulo">Importe:</label>
-									<input type="number" class="form-control" id="con_imp" name="con_imp" min="1"
-										max="2000000" placeholder="Importe del contrato">
+									<input type="number" class="form-control" step="0.01" id="con_imp" name="con_imp" min="1"
+										max="2000000" placeholder="Importe del contrato"required>
 								</fieldset>
 							</div>
 					</div>
@@ -93,16 +93,16 @@ if (isset($_SESSION["usu_id"])) {
 						<div class="col-md-4 col-sm-6">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="tick_titulo">Fecha de Inicio:</label>
-								<input type="date" class="form-control" id="con_ini" name="con_ini"
-									placeholder="Ingrese Titulo">
+								<input type="date" class="form-control" id="con_ini" name="con_ini" required>
+									
 							</fieldset>
 						</div>
 
 						<div class="col-md-4 col-sm-6">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="tick_titulo">Fecha de Fin:</label>
-								<input type="date" class="form-control" id="con_fin" name="con_fin"
-									placeholder="Ingrese Titulo">
+								<input type="date" class="form-control" id="con_fin" name="con_fin" required>
+									
 							</fieldset>
 						</div>
 
@@ -118,7 +118,7 @@ if (isset($_SESSION["usu_id"])) {
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="prov_dom">Descripción del Servicio y/o Bien</label>
 								<div class="summernote-theme-1">
-									<textarea id="con_des" name="con_des" class="summernote"></textarea>
+									<textarea id="con_des" name="con_des" class="summernote" required></textarea>
 
 							</fieldset>
 						</div>
@@ -140,9 +140,9 @@ if (isset($_SESSION["usu_id"])) {
 
 	</body>
 
-	</html>
+
 	<?php
 } else {
 	header("Location:" . Conectar::ruta() . "index.php");
 }
-?>
+?>	</html>
