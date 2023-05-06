@@ -103,6 +103,7 @@
 							<fieldset class="form-group">
 							<label class="form-label semibold" for="exampleInput">Importe</label>
 <<<<<<< HEAD
+
 								<input type="number" class="form-control" id="fac_imp" name="fac_imp" step="0.01" min="1" max="20000000" encabezadoplaceholder="Importe">
 =======
 								<input type="number" class="form-control" id="fac_imp" name="fac_imp" min="1" max="20000000" encabezadoplaceholder="Importe">
