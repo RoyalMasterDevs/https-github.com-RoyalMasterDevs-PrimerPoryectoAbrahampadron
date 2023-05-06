@@ -48,7 +48,11 @@
 						<div class="col-lg-6">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="prov_nom">Nombre:</label>
+<<<<<<< HEAD
 								<input type="text" class="form-control" id="prov_nom" name="prov_nom" placeholder="Nombre y/o Razón Social" required>
+=======
+								<input type="text" class="form-control" id="prov_nom" name="prov_nom" placeholder="Nombre y/o Razón Social">
+>>>>>>> 0e0f53d8b0554283022f632fbed7cea6630b8f2a
 							</fieldset>
 						</div>
 						<div class="col-lg-6">

@@ -44,10 +44,14 @@ $(document).ready(function() {
                 console.log(datos);
                 $('#suficiencia_form').val('');
                 $('#').summernote('reset');
+<<<<<<< HEAD
                 $('#suf_fec').val('');
                 $('#suf_imp').val('');
                 $('#suf_des').val('');
                 $('#par_id').val('');
+=======
+           
+>>>>>>> 0e0f53d8b0554283022f632fbed7cea6630b8f2a
                 swal("Correcto!", "Registrado Correctamente", "success");
             }
             });

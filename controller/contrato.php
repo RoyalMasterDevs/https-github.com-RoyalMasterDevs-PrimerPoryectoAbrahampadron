@@ -5,6 +5,7 @@ $contrato = new Contrato();
 
 switch ($_GET["op"]) {
     case "insert":
+<<<<<<< HEAD
         $contrato->insert_contrato($_POST['proc_id'], $_POST['con_num'], $_POST['prov_id'], $_POST['rec_id'], $_POST['con_imp'], $_POST['con_des'], $_POST['par_id'], $_POST['con_ini'], $_POST['con_fin'], $_POST['con_doc']);
         
         if (empty($_FILES['files']['name'])){
@@ -27,6 +28,9 @@ switch ($_GET["op"]) {
                 $destino = $ruta.$_FILES['files']['name'][$index];
             }
         }
+=======
+        $contrato->insert_contrato($_POST['proc_id'], $_POST['con_num'], $_POST['prov_id'], $_POST['rec_id'], $_POST['con_imp'], $_POST['con_des'], $_POST['par_id'], $_POST['con_ini'], $_POST['con_fin']);
+>>>>>>> 0e0f53d8b0554283022f632fbed7cea6630b8f2a
         break;
 
     case "listar_contrato_x_id":
@@ -34,6 +38,7 @@ switch ($_GET["op"]) {
         $data= Array();
         foreach($datos as $row){
             $sub_array = array();
+<<<<<<< HEAD
             $sub_array[] = '<center>'.$row["con_id"].'</center>';
             $sub_array[] = '<center>'.$row["con_num"].'</center>';
            $sub_array[] =  $row["prov_id"];          ;
@@ -46,6 +51,16 @@ switch ($_GET["op"]) {
 
 
         
+=======
+            $sub_array[] = $row['con_id'];
+            $sub_array[] = $row["con_num"];
+            $sub_array[] = $row["prov_id"];
+            $sub_array[] = strtoupper($row["con_des"]);
+            $sub_array[] ='$'.number_format( $row["con_imp"], 2);
+            $sub_array[] = '<button type="button" onClick="ver('.$row["con_id"].');" id="'.$row["con_id"].'" class="btn btn-inline btn-primary btn-sm ladda-button"><i class="fa fa-eye"></i></button>';
+            $data[] = $sub_array;
+        }
+>>>>>>> 0e0f53d8b0554283022f632fbed7cea6630b8f2a
         $results = array(
             "sEcho" => 1,
             "iTotalRecords" => count($data),
@@ -55,8 +70,35 @@ switch ($_GET["op"]) {
         echo json_encode($results);
 
         break;
+<<<<<<< HEAD
 
     }
+=======
+        case "contratodetalle":
+        $datos=$contrato->contratodetalle();
+        ?>
+             <?php
+            foreach(datos as $row){
+                ?>
+                 	<div class="box-typical box-typical-padding">
+			<h5 class="m-t-lg with-border">Contrato Número
+			<div>Vigencia</div>
+			</h5>
+				
+            <?php
+                }
+              
+           
+                ?>
+
+     
+            <?php
+        break; 
+
+
+            
+          }
+>>>>>>> 0e0f53d8b0554283022f632fbed7cea6630b8f2a
 
 
 ?>

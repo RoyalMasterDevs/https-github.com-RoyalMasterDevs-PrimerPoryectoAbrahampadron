@@ -39,12 +39,17 @@
 						<div class="col-lg-4">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="exampleInput">No. de Oficio:</label>
+<<<<<<< HEAD
 								<input type="text" class="form-control" id="suf_num" name="suf_num" placeholder="No. de Suficiencia" required>
+=======
+								<input type="text" class="form-control" id="suf_num" name="suf_num" placeholder="No. de Suficiencia">
+>>>>>>> 0e0f53d8b0554283022f632fbed7cea6630b8f2a
 							</fieldset>
 						</div>
 						<div class="col-md-4 col-sm-4">
 							<fieldset class="form-group">
 							<label class="form-label semibold" for="exampleInput">Fecha:</label>
+<<<<<<< HEAD
 							<input type="date" class="form-control" id="suf_fec" name="suf_fec" required>
 							</fieldset>
 						</div>
@@ -52,32 +57,57 @@
 							<fieldset class="form-group"> 
 							<label class="form-label semibold" for="exampleInput">Importe:</label>
 								<input type="number" class="form-control" id="suf_imp" name="suf_imp" step="0.01" min="1"  mx="2000000000.50" placeholder="Importe Max" required>
+=======
+							<input type="date" class="form-control" id="suf_fec" name="suf_fec">
+							</fieldset>
+						</div>
+						<div class="col-lg-4">
+							<fieldset class="form-group">
+							<label class="form-label semibold" for="exampleInput">Importe:</label>
+								<input type="number" class="form-control" id="suf_imp" name="suf_imp" min="1" mx="2000000000.00" placeholder="Importe Max">
+>>>>>>> 0e0f53d8b0554283022f632fbed7cea6630b8f2a
 							</fieldset>
 						</div>
 						<div class="col-lg-12">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="suf_des">Justificación:</label>
 								<div class="summernote-theme-1">
+<<<<<<< HEAD
 									<textarea id="suf_des" name="suf_des" class="summernote" required></textarea>
+=======
+									<textarea id="suf_des" name="suf_des" class="summernote"></textarea>
+>>>>>>> 0e0f53d8b0554283022f632fbed7cea6630b8f2a
 							</fieldset>
 							</div>
 						<div class="col-lg-4">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="exampleInput">Partida Presupuestal:</label>
+<<<<<<< HEAD
 								<select id="par_id" name="par_id" class="form-control" required></select>
+=======
+								<select id="par_id" name="par_id" class="form-control"></select>
+>>>>>>> 0e0f53d8b0554283022f632fbed7cea6630b8f2a
 							</fieldset>
   						</div>
 						  <div class="col-lg-4">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="exampleInput">Solicitud</label>
+<<<<<<< HEAD
 								<input type="file" name="fileElem" id="fileElem" class="form-control"required multiple>
+=======
+								<input type="file" name="fileElem" id="fileElem" class="form-control" multiple>
+>>>>>>> 0e0f53d8b0554283022f632fbed7cea6630b8f2a
 							</fieldset>
 						</div>
 						
 						<div class="col-lg-4">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="exampleInput">Autorización</label>
+<<<<<<< HEAD
 								<input type="file" name="fileElem" id="fileElem" class="form-control"required multiple>
+=======
+								<input type="file" name="fileElem" id="fileElem" class="form-control" multiple>
+>>>>>>> 0e0f53d8b0554283022f632fbed7cea6630b8f2a
 							</fieldset>
 						</div>		
 

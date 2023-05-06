@@ -92,7 +92,10 @@
 								<th class="d-none d-sm-table-cell" style="width: 15%;">Nombre del Proveedor</th>
 								<th class="d-none d-sm-table-cell" style="width: 30%;">Descripción del Bien y/o Servicio</th>
 								<th class="d-none d-sm-table-cell" style="width: 5%; text-align: center">Importe</th>
+<<<<<<< HEAD
 								<th class="d-none d-sm-table-cell" style="width: 5%; text-align: center">documento</th>
+=======
+>>>>>>> 0e0f53d8b0554283022f632fbed7cea6630b8f2a
 								<th class="d-none d-sm-table-cell" style="width: 5%; text-align: center">ver</th>
 								
 							</tr>

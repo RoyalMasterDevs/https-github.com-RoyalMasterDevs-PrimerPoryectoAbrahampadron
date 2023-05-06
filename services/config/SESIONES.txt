@@ -1,0 +1,6 @@
+  <img src="../../public/<?php echo $_SESSION["rol_id"] ?>.jpg" alt="">   
+
+  <input type="hidden" id="user_idx" value="<?php echo $_SESSION["usu_id"] ?>"> ID del Usuario-->
+                <input type="hidden" id="rol_idx" value="<?php echo $_SESSION["rol_id"] ?>"><!-- Rol del Usuario-->
+
+  <span class="lblcontactonomx"><?php echo $_SESSION["usu_nom"] ?> <?php echo $_SESSION["usu_ape"] ?></span>
