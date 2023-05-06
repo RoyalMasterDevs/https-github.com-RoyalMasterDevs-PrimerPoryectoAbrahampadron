@@ -5,7 +5,7 @@
 
         switch($_GET["op"]){ 
          case "insert":
-                $nproveedor->insert_nproveedor($_POST["rfc"],$_POST["prov_nom"],$_POST["prov_dom"]);
+                $nproveedor->insert_nproveedor($_POST["prov_nom" ],$_POST["rfc"],$_POST["prov_dom"]);
         break; 
         }
 ?>

@@ -23,9 +23,13 @@
 					<div class="tbl-cell">
 						<h3>Proveedor</h3>
 						<ol class="breadcrumb breadcrumb-simple">
-						<li><a href="../Home/">Inicio</a></li>
-						<li><a href="../NuevoContrato/index.php">Contrato</a></li>
-						</ol>
+								<li><a href="../Home">Incio</a></li>
+								<li><a href="../Suficiencia/index.php">Suficiencia</a></li>
+								<li><a href="../NuevoContrato/index.php">Contrato</a></li>
+								<li><a href="../Nuevoproveedor/index.php">Proveedor</a></li>
+								<li><a href="../ConsultaContrato/index.php">Consuta Contrator</a></li>
+								<li><a href="../Factura/index.php">Factura</a></li>
+							</ol>
 					</div>
 				</div>
 			</div>

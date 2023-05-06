@@ -15,7 +15,7 @@
                     $sub_array = array();
                     $sub_array[] = $row["fac_id"];
                     $sub_array[] = $row["fac_num"];
-                    $sub_array[] = number_format( $row["fac_imp"],2);
+                    $sub_array[] = '$'.number_format( $row["fac_imp"],2);
                     $sub_array[] = strtoupper($row["fac_ofi"]);
                     $sub_array[] = $row["fac_fec"];
                     $sub_array[] = $row["fac_per"];

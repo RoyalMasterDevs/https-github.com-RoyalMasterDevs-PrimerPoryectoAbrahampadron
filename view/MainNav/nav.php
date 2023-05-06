@@ -8,6 +8,12 @@
 	            </a>
 			</li>
 			<li class="blue-dirty">
+				<a href="..\Suficiencia\">
+	            	<span class="font-icon font-icon-dashboard"></span>
+	                <span class="lbl">Suficiencias</span>
+	            </a>
+			</li>
+			<li class="blue-dirty">
 				<a href="..\NuevoContrato\">
 	            	<span class="font-icon font-icon-dashboard"></span>
 	                <span class="lbl">Contrato</span>

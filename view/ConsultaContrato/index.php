@@ -25,8 +25,14 @@
 						<div class="tbl-cell">
 							<h3>Consultar Contrato</h3>
 							<ol class="breadcrumb breadcrumb-simple">
-								<li><a href="#">Home</a></li>
-								<li class="active">Consultar Contrato</li>
+							<ol class="breadcrumb breadcrumb-simple">
+							<li><a href="../Home">Incio</a></li>
+								<li><a href="../Suficiencia/index.php">Suficiencia</a></li>
+								<li><a href="../NuevoContrato/index.php">Contrato</a></li>
+								<li><a href="../Nuevoproveedor/index.php">Proveedor</a></li>
+								<li><a href="../ConsultaContrato/index.php">Consuta Contrator</a></li>
+								<li><a href="../Factura/index.php">Factura</a></li>
+							</ol>
 							</ol>
 						</div>
 					</div>
@@ -78,7 +84,7 @@
 				</div>
 
 				<div class="box-typical box-typical-padding" id="table">
-					<table id="data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
+					<table id="data" class="table table-bordered table-striped table-vcenter js-dataTable-full hover">
 						<thead>
 							<tr>
 								<th style="width: 5%; text-align: center">No.</th>
@@ -86,6 +92,7 @@
 								<th class="d-none d-sm-table-cell" style="width: 15%;">Nombre del Proveedor</th>
 								<th class="d-none d-sm-table-cell" style="width: 30%;">Descripción del Bien y/o Servicio</th>
 								<th class="d-none d-sm-table-cell" style="width: 5%; text-align: center">Importe</th>
+								<th class="d-none d-sm-table-cell" style="width: 5%; text-align: center">documento</th>
 								<th class="d-none d-sm-table-cell" style="width: 5%; text-align: center">ver</th>
 								
 							</tr>
